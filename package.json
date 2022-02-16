@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "assess",
   "version": "1.0.0",
   "description": "---\r 1. [DESCRIPTION](#description)\r 2. [LICENSE](#licenses)\r 3. [INSTALLATION](#installation-instructions)\r 4. [USAGE](#usage-information)\r 5. [CONTRIBUTION GUIDELINES](#contribution-guidelines)\r 6. [TEST INSTRUCTIONS](#test-instructions)\r 7. [CREDITS](#credits)\r 8. [QUESTIONS](#questions)\r ---\r  ## DESCRIPTION\r A social website where users can find valuable insights from previous employees about a company's culture, benefits, salaries and more.\r The user will be able to rate and review by leaving comments on Companies.",
@@ -22,5 +23,10 @@
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.16.1"
+=======
+  "dependencies": {
+    "express": "^4.17.2",
+    "node-sass": "^7.0.1"
+>>>>>>> 2f568e1e5117c00b689c901cca0bc44fbbd246d6
   }
 }
