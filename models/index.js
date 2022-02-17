@@ -3,6 +3,7 @@ const User = require('./User');
 const Benefits = require('./Benefits');
 const Ratings = require('./Ratings');
 const Reviews = require('./Reviews');
+const company_benefits = require('./company_benefits');
 
 User.hasMany(Company, {
     foreignKey: 'user_id'
@@ -22,6 +23,17 @@ Company.hasMany(Benefits, {
     foreignKey: 'company_id'
 });
 
+Company.belongsToMany(Benefits, {
+    through: company_benefits,
+    unique: false,
+    foreignKey: 'company_id'
+});
+
+Benefits.belongsToMany(Company, {
+    through: company_benefits,
+    unique: false,
+    foreignKey: 'benefits_id'
+});
 // Company.hasMany(User, {
 //     foreignKey: 'user_id'
 // });
