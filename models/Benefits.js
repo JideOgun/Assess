@@ -14,6 +14,13 @@ Benefits.init(
         benefit_name: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        company_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'company',
+                key: 'id'
+            }
         }
         
     },
@@ -21,7 +28,7 @@ Benefits.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'comment'
+        modelName: 'benefits'
       } 
 );
 
