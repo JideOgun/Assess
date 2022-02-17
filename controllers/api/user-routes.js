@@ -7,3 +7,5 @@ router.get('/', (req, res) => {
         res.json(dbUserdata);
     });
 });
+
+module.exports = router;

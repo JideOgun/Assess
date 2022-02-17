@@ -22,9 +22,9 @@ Company.hasMany(Benefits, {
     foreignKey: 'company_id'
 });
 
-Company.hasMany(User, {
-    foreignKey: 'user_id'
-});
+// Company.hasMany(User, {
+//     foreignKey: 'user_id'
+// });
 
 Company.hasMany(Ratings, {
     foreignKey: 'company_id'
@@ -50,10 +50,5 @@ Ratings.belongsTo(User, {
 Ratings.belongsTo(Company, {
     foreignKey: 'company_id'
 });
-
-
-
-
-
 
 module.exports = { User, Company, Reviews, Benefits, Ratings };
