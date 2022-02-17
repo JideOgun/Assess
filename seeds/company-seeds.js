@@ -3,15 +3,38 @@ const { Company } = require('../models');
 const companyData = [
   {
     company_name: 'Google',
-    e: 14.99,
-    stock: 14,
-    category_id: 1,
+    roles: "Software Engineering Lead",
+    user_id: 1,
   },
   {
-    product_name: 'Running Sneakers',
-    price: 90.0,
-    stock: 25,
-    category_id: 5,
+    company_name: 'Facebook',
+    roles: "Test Engineer",
+    user_id: 2,
+  },
+  {
+    company_name: 'Expedia',
+    roles: "Chief Executive Officer",
+    user_id: 3,
+  },
+  {
+    company_name: 'TikTok',
+    roles: "Chief Technical Officer",
+    user_id: 4,
+  },
+  {
+    company_name: 'Tinder',
+    roles: "SEO Consultant",
+    user_id: 5,
+  },
+  {
+    company_name: 'Hinge',
+    roles: "Web Analytics Developer",
+    user_id: 6,
+  },
+  {
+    company_name: 'Apple',
+    roles: "Digital Marketing Manager",
+    user_id: 7,
   }
 ];
 
