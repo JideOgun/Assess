@@ -1,38 +1,35 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Ratings extends Model {}
+class Benefits extends Model {}
 
-Ratings.init(
+Benefits.init(
     {
         id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
             primaryKey: true,
             autoIncrement: true
-        },
-        user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: {
-                model: 'user',
-                key: 'id'
-            }
+            },
+        benefit_name: {
+            type: DataTypes.STRING,
+            allowNull: false
         },
         company_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
-      references: {
-        model: 'company',
-        key: 'id'
-      }
+            references: {
+                model: 'company',
+                key: 'id'
+            }
         }
+        
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'ratings'
-    }
+        modelName: 'benefits'
+      } 
 );
 
-module.exports = Ratings;
+module.exports = Benefits;
