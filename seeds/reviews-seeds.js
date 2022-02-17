@@ -8,8 +8,8 @@ const reviewsData = [
     },
     {
         Reviews_text: 'Free cafetaria food, Monday to Friday, breakfast, lunch and dinner',
-       user_id: 2,
-       company_id: 2
+        user_id: 2,
+        company_id: 2
     }
 ];
 

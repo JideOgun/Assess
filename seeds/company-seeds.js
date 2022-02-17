@@ -38,6 +38,6 @@ const companyData = [
   }
 ];
 
-const seedCompany = () => Company.bulkCreate(companyData);
+const seedCompanies = () => Company.bulkCreate(companyData);
 
-module.exports = seedProducts;
+module.exports = seedCompanies;

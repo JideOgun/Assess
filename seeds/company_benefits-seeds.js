@@ -1,4 +1,4 @@
-const { company_benefits } = require('../models');
+const { Company_Benefits } = require('../models');
 
 const companyBenefitsData = [
     {
@@ -18,11 +18,11 @@ const companyBenefitsData = [
         benefit_id: 1
     },
     {
-        company_id: 1,
+        company_id: 2,
         benefit_id: 3
     },
     {
-        company_id: 1,
+        company_id: 5,
         benefit_id: 4
     },
     {
@@ -35,6 +35,6 @@ const companyBenefitsData = [
     }
 ];
 
-const seedcompanyBenefits = () => company_benefits.bulkCreate(companyBenefitsData);
+const seedcompanyBenefits = () => Company_Benefits.bulkCreate(companyBenefitsData);
 
 module.exports = seedcompanyBenefits;
