@@ -1,0 +1,16 @@
+@import './resets', './variables';
+
+body {
+  background-color: $primary-clr;
+  font-weight: map-get($font-weights, medium);
+}
+
+// nesting
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  p {
+    font-weight: map-get($font-weights, medium);
+  }
+}
