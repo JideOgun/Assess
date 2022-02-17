@@ -1,16 +1,22 @@
-@import './resets', './variables';
+@import './resets', './variables', './functions', './mixins';
 
 body {
   background-color: $primary-clr;
-  font-weight: map-get($font-weights, medium);
+  color: $text-clr;
 }
 
 // nesting
 .main {
+  @include flexCenter(column);
   width: 80%;
   margin: 0 auto;
 
-  p {
-    font-weight: map-get($font-weights, medium);
+  #{&}__paragraph {
+    font-weight: weight(medium);
+    font-size: fontSize(medium);
+
+    &:hover {
+      color: $secondary-clr;
+    }
   }
 }
