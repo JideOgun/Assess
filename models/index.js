@@ -1,5 +1,8 @@
 const Company = require('./Company');
 const User = require('./User');
+const Benefits = require('./Benefits');
+const Ratings = require('./Ratings');
+const Reviews = require('./Reviews');
 
 User.hasMany(Company, {
     foreignKey: 'user_id'
