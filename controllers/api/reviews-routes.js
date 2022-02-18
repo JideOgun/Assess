@@ -41,7 +41,7 @@ router.delete('/:id', (req, res) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json
+            res.status(500).json(err);
         });
     }
 });

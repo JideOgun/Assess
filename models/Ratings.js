@@ -25,6 +25,10 @@ Ratings.init(
         model: 'company',
         key: 'id'
       }
+        },
+        rating_value: {
+            type: DataTypes.INTEGER,
+            unique: false
         }
     },
     {
