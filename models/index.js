@@ -21,8 +21,6 @@ Company.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-
-
 Company.hasMany(Benefits, {
     foreignKey: 'company_id'
 });
@@ -38,9 +36,10 @@ Benefits.belongsToMany(Company, {
     unique: false,
     foreignKey: 'benefits_id'
 });
-// Company.hasMany(User, {
-//     foreignKey: 'user_id'
-// });
+
+Company.hasMany(Reviews, {
+    foreignKey: 'company_id'
+});
 
 Company.hasMany(Ratings, {
     foreignKey: 'company_id'
