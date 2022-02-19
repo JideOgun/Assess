@@ -30,7 +30,7 @@ router.put('/:id',  (req, res) => {
         {
             reviews_text: req.body.reviews_text,
             user_id: req.session.user_id,
-            post_id: req.body.company_name
+            post_id: req.body.post_id
         },
         {
           where: {
