@@ -6,16 +6,30 @@
 }
 
 body {
-  background-color: #272727;
+  background-color: #403847;
   color: white;
 }
 
-header img {
-  width: 15%;
+.header {
+  background-color: #403847;
+}
+
+.header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+.header img {
+  width: 50%;
   height: auto;
 }
 
-.main {
+.header .login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,16 +43,37 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+}
+
+.header .login a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80%;
   margin: 0 auto;
 }
 
-.main .main__paragraph {
+.main .main__div {
   font-weight: 500;
   font-size: 2rem;
-}
-
-.main .main__paragraph:hover {
-  color: #8cc828;
+  width: 30%;
+  height: 5rem;
 }
 /*# sourceMappingURL=main.css.map */

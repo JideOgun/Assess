@@ -1,6 +1,5 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
-const { Company, Ratings } = require('../models');
+const { Company, Ratings, Reviews, User } = require('../models');
 
 router.get('/', (req, res) => {
   Company.findAll({
@@ -12,6 +11,49 @@ router.get('/', (req, res) => {
       );
 
       res.render('homepage', { companies });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('login');
+});
+
+router.get('/companies/:id', (req, res) => {
+  Company.findOne({
+    where: {
+      id: req.params.id,
+    },
+    include: [
+      {
+        model: Reviews,
+        attributes: ['id', 'Reviews_text', 'user_id', 'created_at'],
+        include: {
+          model: User,
+          attributes: ['username'],
+        },
+      },
+      {
+        model: User,
+        attributes: ['username'],
+      },
+    ],
+  })
+    .then((dbCompanyData) => {
+      if (!dbCompanyData) {
+        res.status(404).json({ message: 'No company with that ID' });
+        return;
+      }
+      const companies = dbCompanyData.get({ plain: true });
+
+      res.render('single-company', { companies });
     })
     .catch((err) => {
       console.log(err);

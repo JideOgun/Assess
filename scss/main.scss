@@ -5,25 +5,38 @@ body {
   color: $text-clr;
 }
 
-header {
+.header {
+  background-color: $primary-clr;
+  #{&}__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
   img {
-    width: 15%;
+    width: 50%;
     height: auto;
+  }
+  .login {
+    @include flexCenter(column);
+    font-size: fontSize(small);
+    padding-right: 2rem;
+    a {
+      color: $text-clr;
+      text-decoration: none;
+    }
   }
 }
 
 // nesting
 .main {
-  @include flexCenter(column);
+  @include flexCenter(row);
   width: 80%;
   margin: 0 auto;
 
-  #{&}__paragraph {
+  #{&}__div {
     font-weight: weight(medium);
     font-size: fontSize(medium);
-
-    &:hover {
-      color: $secondary-clr;
-    }
+    width: 30%;
+    height: 5rem;
   }
 }
