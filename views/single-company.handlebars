@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechSess Reviews</title>
-    <link rel="stylesheet" href="style.css">  
-</head>
-<body>
-    <div class="container">
-        <div class="rating-wrap">
-            <h2>Company Star Rating</h2>
+
+
+
+<form class="review-form">
+  <div>
+    <textarea name="review-body" id="textarea"></textarea>
+  </div>
+
+  <div>
+    <button type="submit" id="btn">add Review</button>
+  </div>
+</form>
+<div>
+   {{company_name}}
+</div>
+<div class="container">
+    <div class="rating-wrap">
+        <h2>Company Rating</h2>
             <div class="center">
                 <fieldset class="rating">
                     <input type="radio" id="5star" name="rating" value="5"/><label for="5star" class="full"></label>
@@ -25,13 +30,10 @@
                     <input type="radio" id="0.5star" name="rating" value="0.5"/><label for="0.5star" class="halffull"></label>
                 </fieldset>
             </div>
-            <h4 id="rating-value"></h4>
-            <br>
-            <button type="submit" class="rating-value-btn">Submit Rating</button>
-        </div>
-        
-
+    <h4 id="rating-value"></h4>
+            
     </div>
-    <script src="public\javascript\star-rating.js"></script>
-</body>
-</html>
+        
+<script src="/javascript/star-rating.js"></script>
+</div>
+    

@@ -26,39 +26,46 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/companies/:id', (req, res) => {
-  Company.findOne({
-    where: {
-      id: req.params.id,
-    },
-    include: [
-      {
-        model: Reviews,
-        attributes: ['id', 'Reviews_text', 'user_id', 'created_at'],
-        include: {
-          model: User,
-          attributes: ['username'],
-        },
-      },
-      {
-        model: User,
-        attributes: ['username'],
-      },
-    ],
-  })
-    .then((dbCompanyData) => {
-      if (!dbCompanyData) {
-        res.status(404).json({ message: 'No company with that ID' });
-        return;
-      }
-      const companies = dbCompanyData.get({ plain: true });
 
-      res.render('single-company', { companies });
+
+
+router.get('/company/:id', (req, res) => {
+  Company.findOne({
+      where: {
+        id: req.params.id
+      }, 
+          include: [
+          {
+              model: Reviews,
+              attributes: ['Reviews_text', 'user_id', 'Company_id' ],
+              include: {
+                  model: User,
+                  attributes: ['username']
+              }
+          }, 
+          {
+              model: User,
+              attributes: ['username']  
+          }
+          
+      ]
     })
-    .catch((err) => {
-      console.log(err);
+    .then(dbCompanyData =>
+      {
+        if(!dbCompanyData) {
+          res.status(404).json({ message: 'No Company found with this id'});
+          return;
+      }
+
+          const companies = dbCompanyData.get({ plain: true });
+          res.render('single-company', { companies });
+      }
+      // res.json(dbRatingsData)
+      )
+  .catch(err => {
       res.status(500).json(err);
-    });
-});
+  });
+  });
+
 
 module.exports = router;
