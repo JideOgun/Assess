@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Reviews } = require('../../models');
+const { Reviews, Company, User } = require('../../models');
 
 router.get('/', (req, res) => {
     Reviews.findAll()
@@ -15,7 +15,7 @@ router.post('/', (req, res) => {
         Reviews.create({
             reviews_text: req.body.reviews_text,
             user_id: req.session.user_id,
-            post_id: req.body.post_id
+            post_id: req.body.company_name
         })
         .then(dbReviewsData => res.json(dbReviewsData))
         .catch(err => {
