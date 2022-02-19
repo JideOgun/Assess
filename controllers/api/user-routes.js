@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
       },
       {
         model: Reviews,
-        attributes: ['id', 'Reviews_text', 'created_at'],
+        attributes: ['id', 'reviews_text', 'created_at'],
       },
     ],
   })
