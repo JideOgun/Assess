@@ -5,14 +5,14 @@ const companyRoutes = require('./company-routes');
 const userRoutes = require('./user-routes');
 const ratingsRoutes = require('./ratings-routes');
 const benefitsRoutes = require('./benefits-routes');
-const companyBenfitsRoutes = require('./company_benefits-routes');
+const CompanyBenefitsRoutes = require('./companybenefits-routes');
 
 router.use('/reviews', reviewsRoutes);
 router.use('/companies', companyRoutes);
 router.use('/users', userRoutes);
 router.use('/ratings', ratingsRoutes);
 router.use('/benefits', benefitsRoutes);
-router.use('/company_benefits', companyBenfitsRoutes);
+router.use('/CompanyBenefits', CompanyBenefitsRoutes);
 
 
 module.exports = router;

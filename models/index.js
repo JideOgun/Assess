@@ -3,7 +3,7 @@ const User = require('./User');
 const Benefits = require('./Benefits');
 const Ratings = require('./Ratings');
 const Reviews = require('./Reviews');
-const Company_Benefits = require('./Company_Benefits');
+const CompanyBenefits = require('./CompanyBenefits');
 
 User.hasMany(Company, {
     foreignKey: 'user_id'
@@ -26,13 +26,13 @@ Company.hasMany(Benefits, {
 });
 
 Company.belongsToMany(Benefits, {
-    through: Company_Benefits,
+    through: CompanyBenefits,
     unique: false,
     foreignKey: 'company_id'
 });
 
 Benefits.belongsToMany(Company, {
-    through: Company_Benefits,
+    through: CompanyBenefits,
     unique: false,
     foreignKey: 'benefits_id'
 });
@@ -66,4 +66,4 @@ Ratings.belongsTo(Company, {
     foreignKey: 'company_id'
 });
 
-module.exports = { User, Company, Reviews, Benefits, Ratings, Company_Benefits };
+module.exports = { User, Company, Reviews, Benefits, Ratings, CompanyBenefits };

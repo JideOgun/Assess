@@ -1,6 +1,6 @@
-const { Company_Benefits } = require('../models');
+const { CompanyBenefits } = require('../models');
 
-const companyBenefitsData = [
+const CompanyBenefitsData = [
     {
        company_id: 3,
        benefit_id: 2
@@ -35,6 +35,6 @@ const companyBenefitsData = [
     }
 ];
 
-const seedcompanyBenefits = () => Company_Benefits.bulkCreate(companyBenefitsData);
+const seedCompanyBenefits = () => CompanyBenefits.bulkCreate(CompanyBenefitsData);
 
-module.exports = seedcompanyBenefits;
+module.exports = seedCompanyBenefits;
