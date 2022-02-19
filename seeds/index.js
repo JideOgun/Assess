@@ -1,6 +1,6 @@
 const seedCompanies = require('./company-seeds');
 const seedBenefits = require('./benefits-seeds');
-const seedcompanyBenefits = require('./company_benefits-seeds');
+const seedcompanyBenefits = require('./companybenefits-seeds');
 const seedUsers = require('./user-seeds');
 const seedReviews = require('./reviews-seeds');
 const seedRatings = require('./ratings-seeds');
