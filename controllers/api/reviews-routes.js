@@ -10,6 +10,30 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/:id', (req, res) => {
+
+    Reviews.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: {
+        model: Reviews,
+        attributes: ['id']
+      }
+    })
+      .then(dbReviewsData => {
+        if(!dbReviewsData) {
+          res.status(404).json({message: 'No Reviews found'});
+          return;
+        }
+        res.json(dbReviewsData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err)
+      });
+  });
+
 router.post('/', (req, res) => {
     if (req.session) {
         Reviews.create({
