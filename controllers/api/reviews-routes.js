@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Reviews, Company, User } = require('../../models');
+const { Reviews } = require('../../models');
 
 router.get('/', (req, res) => {
     Reviews.findAll()
@@ -10,12 +10,36 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/:id', (req, res) => {
+
+    Reviews.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: {
+        model: Reviews,
+        attributes: ['id']
+      }
+    })
+      .then(dbReviewsData => {
+        if(!dbReviewsData) {
+          res.status(404).json({message: 'No Reviews found'});
+          return;
+        }
+        res.json(dbReviewsData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err)
+      });
+  });
+
 router.post('/', (req, res) => {
     if (req.session) {
         Reviews.create({
             reviews_text: req.body.reviews_text,
             user_id: req.session.user_id,
-            post_id: req.body.company_name
+            company_id: req.body.company_id
         })
         .then(dbReviewsData => res.json(dbReviewsData))
         .catch(err => {
@@ -30,7 +54,7 @@ router.put('/:id',  (req, res) => {
         {
             reviews_text: req.body.reviews_text,
             user_id: req.session.user_id,
-            post_id: req.body.company_name
+            post_id: req.body.post_id
         },
         {
           where: {

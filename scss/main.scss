@@ -2,21 +2,41 @@
 
 body {
   background-color: $primary-clr;
-  color: $text-clr;
+  a {
+    color: $text-clr;
+    text-decoration: none;
+  }
+}
+
+.header {
+  background-color: $primary-clr;
+  #{&}__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  img {
+    width: 50%;
+    height: auto;
+  }
+  .login {
+    @include flexCenter(column);
+    font-size: fontSize(small);
+    padding-right: 2rem;
+  }
 }
 
 // nesting
 .main {
-  @include flexCenter(column);
+  @include flexCenter(row);
   width: 80%;
   margin: 0 auto;
 
-  #{&}__paragraph {
+  #{&}__div {
+    @include flexCenter(column);
     font-weight: weight(medium);
     font-size: fontSize(medium);
-
-    &:hover {
-      color: $secondary-clr;
-    }
+    width: 30%;
+    height: 10rem;
   }
 }
