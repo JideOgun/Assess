@@ -1,25 +1,28 @@
 const router = require('express').Router();
 const { company_benefits, Benefits} = require('../../models');
 
-
-
 // get all compnay_benefits
 router.get('/', (req, res) => {
-    Benefits.findAll(
+  company_benefits.findAll(
       {
-      include: {
-        model: company_benefits,
-        attributes: ['benefit_name']
+      attributes: ['id'],
+          include: [
+          {model: Company,
+          attributes: [ 'id', 'company_name' ]
+      },
+      {
+          modal: Benefits,
+          attributes: [ 'benefit_name']
       }
-    })
-    .then(dbBenefitData => {
-      if(!dbBenefitData) {
-        res.status(404).json({message: 'No benefits found'});
-        return;
-      }
-      res.json(dbBenefitData);
-    })
+      ]
+  }
+  )
+  .then(dbcompany_benefitsData => res.json(dbcompany_benefitsData))
+  .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
   });
+});
 
 
 
