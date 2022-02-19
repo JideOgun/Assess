@@ -6,12 +6,16 @@
 }
 
 body {
-  background-color: #403847;
-  color: white;
+  background-color: #3a2748;
+}
+
+body a {
+  color: #f4a740;
+  text-decoration: none;
 }
 
 .header {
-  background-color: #403847;
+  background-color: #3a2748;
 }
 
 .header .header__container {
@@ -47,11 +51,6 @@ body {
   padding-right: 2rem;
 }
 
-.header .login a {
-  color: white;
-  text-decoration: none;
-}
-
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,9 +70,22 @@ body {
 }
 
 .main .main__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-weight: 500;
   font-size: 2rem;
   width: 30%;
-  height: 5rem;
+  height: 10rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,10 @@
 
 body {
   background-color: $primary-clr;
-  color: $text-clr;
+  a {
+    color: $text-clr;
+    text-decoration: none;
+  }
 }
 
 .header {
@@ -20,10 +23,6 @@ body {
     @include flexCenter(column);
     font-size: fontSize(small);
     padding-right: 2rem;
-    a {
-      color: $text-clr;
-      text-decoration: none;
-    }
   }
 }
 
@@ -34,9 +33,10 @@ body {
   margin: 0 auto;
 
   #{&}__div {
+    @include flexCenter(column);
     font-weight: weight(medium);
     font-size: fontSize(medium);
     width: 30%;
-    height: 5rem;
+    height: 10rem;
   }
 }
