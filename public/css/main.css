@@ -10,6 +10,11 @@ body {
   color: white;
 }
 
+header img {
+  width: 15%;
+  height: auto;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;

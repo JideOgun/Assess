@@ -5,6 +5,13 @@ body {
   color: $text-clr;
 }
 
+header {
+  img {
+    width: 15%;
+    height: auto;
+  }
+}
+
 // nesting
 .main {
   @include flexCenter(column);
