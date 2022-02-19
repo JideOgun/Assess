@@ -11,7 +11,7 @@ Reviews.init(
         primaryKey: true,
         autoIncrement: true
       },
-      Reviews_text: {
+      reviews_text: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
@@ -25,7 +25,7 @@ Reviews.init(
           key: 'id'
         }
       },
-      Company_id: {
+      company_id: {
         type: DataTypes.INTEGER,
         references: {
           model: 'company',
