@@ -6,16 +6,12 @@
 }
 
 body {
-  background-color: #3a2748;
+  background-color: rgba(58, 39, 72, 0.7);
 }
 
 body a {
   color: #f4a740;
   text-decoration: none;
-}
-
-.header {
-  background-color: #3a2748;
 }
 
 .header .header__container {
@@ -29,8 +25,8 @@ body a {
 }
 
 .header img {
-  width: 50%;
-  height: auto;
+  height: 7rem;
+  border-radius: 20px;
 }
 
 .header .nav {
@@ -43,10 +39,10 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1.5rem;
   padding-right: 2rem;
 }
@@ -65,8 +61,10 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
+  width: 80%;
 }
 
 .main .main__div {
@@ -79,13 +77,12 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background-color: rgba(58, 39, 72, 0.8);
   font-weight: 500;
   font-size: 2rem;
   width: 30%;
   height: 10rem;
+  margin: 1rem;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
