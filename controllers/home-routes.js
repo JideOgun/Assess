@@ -3,7 +3,7 @@ const { Company, Ratings, Reviews, User } = require('../models');
 
 router.get('/', (req, res) => {
   Company.findAll({
-    attributes: ['id', 'company_name'],
+    attributes: ['company_name', 'roles', 'id', 'user_id'],
   })
     .then((dbCompanyData) => {
       const companies = dbCompanyData.map((company) =>
@@ -26,8 +26,11 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/companies/:id', (req, res) => {
+
+
+router.get('/company/:id', (req, res) => {
   Company.findOne({
+    attributes: ['company_name', 'roles', 'id', 'user_id'],
     where: {
       id: req.params.id,
     },
@@ -51,9 +54,10 @@ router.get('/companies/:id', (req, res) => {
         res.status(404).json({ message: 'No company with that ID' });
         return;
       }
+      
       const companies = dbCompanyData.get({ plain: true });
 
-      res.render('single-company', { companies });
+      res.render('single-company', { companies, loggedIn: req.session.loggedIn  });
     })
     .catch((err) => {
       console.log(err);

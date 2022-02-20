@@ -1,5 +1,13 @@
-<main class='main'>
+
+
+
+<div class='main'>
   {{#each companies as |company|}}
-    <div class='main__div'><a href='/company'>{{company_name}}</a></div>
+
+    {{> company-info company}}
+
   {{/each}}
-</main>
+
+  
+  
+</div>

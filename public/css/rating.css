@@ -16,15 +16,16 @@ body{
 }
 
 .container{
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
 .rating-wrap{
-    max-width: 480px;
-    margin: auto;
+    border-width: thick;
+    width: max-content;
+    margin-left: 400pt;
     padding: 15px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
     text-align: center;
@@ -87,3 +88,30 @@ body{
 .rating > input.checked ~ label:hover ~ label{
     color: #fce138
 }
+
+#textarea {
+    margin-left: 250pt;
+    width: 60%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  
+  #btn {
+    margin-left: 250pt;
+    background-color: purple; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    
+   
+  }

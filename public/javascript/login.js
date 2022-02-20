@@ -48,9 +48,7 @@ async function signupFormHandler(event) {
   }
 }
 
-document
-  .querySelector('#login-btn')
-  .addEventListener('click', loginFormHandler);
+document.querySelector('#login-btn').addEventListener('click', loginFormHandler);
 
 document
   .querySelector('#signup-btn')
