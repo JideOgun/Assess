@@ -1,7 +1,8 @@
-@import './resets', './variables', './functions', './mixins';
+@import './resets', './variables', './functions', './mixins', './rating';
 
 body {
   background-color: $primary-clr;
+  font-family: 'Courier New', Courier, monospace;
 
   a {
     color: $text-clr;
@@ -27,7 +28,6 @@ body {
   }
 }
 
-// nesting
 .main {
   display: flex;
   justify-content: center;
@@ -47,6 +47,32 @@ body {
     width: 30%;
     height: 10rem;
     margin: 1rem;
+    border-radius: 20px;
+  }
+}
+
+.btn-no-style {
+  color: $text-clr;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: fontSize(small);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $dark-primary;
+  .contact {
+    color: $text-clr;
+    font-size: fontSize(small);
+  }
+  .logo {
+    height: 4rem;
     border-radius: 20px;
   }
 }

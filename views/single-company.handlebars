@@ -1,18 +1,17 @@
-
-
-<div id="company-name">
-  {{companies.company_name}}
-</div>
-
 <div>
-    {{#each companies.benefits}}
+  <div>
+    <img src='/images/{{companies.company_name}}.png'
+        width='100px'
+      />
+  </div>
+  
+  <div id="company-name">
+  
+    {{companies.company_name}}
+  </div>
 
-{{benefit_name}}
-
-    {{/each}}
-</div>
-
-
+ </div>
+  
 
 <form class="review-form">
   <div>
