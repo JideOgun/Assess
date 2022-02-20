@@ -1,17 +1,24 @@
 const router = require('express').Router();
-const { Benefits, company_benefits } = require('../../models');
+const { Benefits, Company, CompanyBenefits } = require('../../models');
 
 // get all benefits 
 router.get('/', (req, res) => {
     Benefits.findAll(
-        {
-        attributes: ['benefit_name'],
-        //     include: [
-        //     {model: company_benefits,
-        //     attributes: [ 'company_benefits' ]
-        // }
-        // ]
-    }
+    //     {
+    //     attributes: ['benefit_name'],
+    //     include: [
+    //         {
+    //         model: Company,
+    //         through: CompanyBenefits,
+    //         // attributes: [ 'id', 'company_name' ]
+    //         },
+    //         {
+    //         model: Benefits,
+    //         through: CompanyBenefits,
+    //         // attributes: [ 'id', 'benefit_name']
+    //         }
+    //     ]
+    // }
     )
     .then(dbBenefitsData => res.json(dbBenefitsData))
     .catch(err => {
