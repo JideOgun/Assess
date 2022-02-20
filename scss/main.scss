@@ -28,7 +28,6 @@ body {
   }
 }
 
-// nesting
 .main {
   display: flex;
   justify-content: center;
@@ -68,11 +67,11 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: $dark-primary;
-  div {
+  .contact {
     color: $text-clr;
     font-size: fontSize(small);
   }
-  img {
+  .logo {
     height: 4rem;
     border-radius: 20px;
   }

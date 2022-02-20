@@ -33,43 +33,39 @@
 .rating {
   border: none;
   float: left;
+  input {
+    display: none;
+  }
+  label::before {
+    content: '\f005';
+    font-family: FontAwesome;
+    margin: 5px;
+    font-size: $font-sizes(small);
+    display: inline-block;
+  }
+  .halffull::before {
+    content: '\f089';
+    position: absolute;
+    cursor: pointer;
+  }
+  label {
+    color: #ddd;
+    float: right;
+    cursor: pointer;
+  }
+  input:checked + label:hover,
+  input:checked ~ label:hover,
+  label:hover ~ input:checked ~ label,
+  input.checked ~ label:hover ~ label {
+    color: #fce138;
+  }
 }
 
-.rating > input {
-  display: none;
-}
-
-.rating > label::before {
-  content: '\f005';
-  font-family: FontAwesome;
-  margin: 5px;
-  font-size: 1.5rem;
-  display: inline-block;
-}
-
-.rating > .halffull::before {
-  content: '\f089';
-  position: absolute;
-  cursor: pointer;
-}
-
-.rating > label {
-  color: #ddd;
-  float: right;
-  cursor: pointer;
-}
-
-.rating > input:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-  color: #fce138;
-}
-
-.rating > input:checked + label:hover,
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label,
-.rating > input.checked ~ label:hover ~ label {
-  color: #fce138;
+.rating:not(:checked) {
+  label:hover,
+  label:hover ~ label {
+    color: #fce138;
+  }
 }
 
 #textarea {
