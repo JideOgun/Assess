@@ -14,12 +14,7 @@ router.get("/:id", (req, res) => {
   Reviews.findOne({
     where: {
       id: req.params.id,
-    },
-    include: {
-      model: Reviews,
-      attributes: ["id", "reviews_text", "created_at"],
-    },
-  })
+    }})
     .then((dbReviewsData) => {
       if (!dbReviewsData) {
         res.status(404).json({ message: "No Reviews found" });
