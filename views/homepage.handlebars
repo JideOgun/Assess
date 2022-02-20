@@ -1,13 +1,11 @@
 <div class='main'>
   {{#each companies as |company|}}
-    <div class='main__div'>
-      <div>
-        <img src='/images/{{company_name}}.png' width='100px' />
-      </div>
-      <div>
-        <a href='/company'>{{company_name}}</a>
-      </div>
-    </div>
+  
+      
+        
+        {{> company-info company}}
+      
+  
   {{/each}}
 
 </div>
