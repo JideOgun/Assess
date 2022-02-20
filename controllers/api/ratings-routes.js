@@ -1,17 +1,24 @@
 const router = require('express').Router();
 const { Ratings } = require('../../models');
+// const sequelize = require('../config/connection');
 
 
 router.get('/', (req, res) => {
     Ratings.findAll()
-    .then(dbRatingsData => res.json(dbRatingsData))
+    .then(dbRatingsData =>
+       
+        res.json(dbRatingsData)
+        )
     .catch(err => {
         res.status(500).json(err);
     });
     });
 
+
 router.post('/', (req, res) => {
     Ratings.create({
+        user_id: req.session.user_id,
+        company_id: req.body.company_id,
         rating_value: req.body.rating_value
     }).then(dbRatingsData => res.json(dbRatingsData))
     .catch(err => {
