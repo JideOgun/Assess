@@ -11,7 +11,7 @@ Reviews.init(
         primaryKey: true,
         autoIncrement: true
       },
-      Reviews_text: {
+      reviews_text: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {

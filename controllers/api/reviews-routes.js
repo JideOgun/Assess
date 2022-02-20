@@ -14,8 +14,8 @@ router.post('/', (req, res) => {
     if (req.session) {
         Reviews.create({
             reviews_text: req.body.reviews_text,
-            user_id: req.session.user_id,
-            post_id: req.body.company_name
+            user_id: req.body.user_id,
+            company_id: req.body.company_id
         })
         .then(dbReviewsData => res.json(dbReviewsData))
         .catch(err => {
@@ -30,7 +30,7 @@ router.put('/:id',  (req, res) => {
         {
             reviews_text: req.body.reviews_text,
             user_id: req.session.user_id,
-            post_id: req.body.company_name
+            company_id: req.body.company_id
         },
         {
           where: {
