@@ -1,7 +1,12 @@
-<div class="reviews">
-{{#each this}}
-
-{{reviews_text}}
-
-{{/each}}
+<div class="Reviews">
+  {{#each this}}
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{format_date created_at}}
+    </div>
+    <div class="text">
+      {{reviews_text}}
+    </div>
+  </section>
+  {{/each}}
 </div>
