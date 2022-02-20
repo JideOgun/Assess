@@ -3,7 +3,7 @@ const { Company, Ratings, Reviews, User } = require('../models');
 
 router.get('/', (req, res) => {
   Company.findAll({
-    attributes: ['id', 'company_name'],
+    attributes: ['company_name', 'roles', 'id', 'user_id'],
   })
     .then((dbCompanyData) => {
       const companies = dbCompanyData.map((company) =>
@@ -31,6 +31,7 @@ router.get('/login', (req, res) => {
 
 router.get('/company/:id', (req, res) => {
   Company.findOne({
+    attributes: ['company_name', 'roles', 'id', 'user_id'],
       where: {
         id: req.params.id
       }, 
@@ -46,7 +47,8 @@ router.get('/company/:id', (req, res) => {
           {
               model: User,
               attributes: ['username']  
-          }
+          },
+        
           
       ]
     })

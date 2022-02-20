@@ -53,7 +53,7 @@ body a {
 }
 
 .main {
-  /* display: -webkit-box; */
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
