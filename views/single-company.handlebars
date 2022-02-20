@@ -3,6 +3,17 @@
 <div id="company-name">
   {{companies.company_name}}
 </div>
+
+<div>
+    {{#each companies.benefits}}
+
+{{benefit_name}}
+
+    {{/each}}
+</div>
+
+
+
 <form class="review-form">
   <div>
     <textarea name="review-body" id="textarea"></textarea>
