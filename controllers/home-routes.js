@@ -31,28 +31,18 @@ router.get('/login', (req, res) => {
 
 router.get('/company/:id', (req, res) => {
   Company.findOne({
-    attributes: ['company_name', 'roles', 'id', 'user_id'],
-      where: {
-        id: req.params.id
-      }, 
-          include: [
-          {
-              model: Reviews,
-              attributes: ['Reviews_text', 'user_id', 'Company_id' ],
-              include: {
-                  model: User,
-                  attributes: ['username']
-              }
-          }, 
-          {
-              model: User,
-              attributes: ['username']  
-          },
-        
-          
-      ]
-    })
-    .then(dbCompanyData =>
+    where: {
+      id: req.params.id,
+    },
+    include: [
+      {
+        model: Reviews,
+        attributes: ['id', 'reviews_text', 'user_id', 'created_at'],
+        include: {
+          model: User,
+          attributes: ['username'],
+        },
+      },
       {
         if(!dbCompanyData) {
           res.status(404).json({ message: 'No Company found with this id'});

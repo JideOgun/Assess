@@ -25,7 +25,7 @@ Reviews.init(
           key: 'id'
         }
       },
-      Company_id: {
+      company_id: {
         type: DataTypes.INTEGER,
         references: {
           model: 'company',
