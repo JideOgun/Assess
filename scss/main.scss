@@ -19,8 +19,8 @@ body {
     width: 50%;
     height: auto;
   }
-  .login {
-    @include flexCenter(column);
+  .nav {
+    @include flexCenter(row);
     font-size: fontSize(small);
     padding-right: 2rem;
   }
