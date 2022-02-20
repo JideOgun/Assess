@@ -28,8 +28,7 @@ router.get('/login', (req, res) => {
 
 
 
-
-router.get('/company/:id', (req, res) => {
+router.get('/companies/:id', (req, res) => {
   Company.findOne({
     where: {
       id: req.params.id,
@@ -44,20 +43,24 @@ router.get('/company/:id', (req, res) => {
         },
       },
       {
-        if(!dbCompanyData) {
-          res.status(404).json({ message: 'No Company found with this id'});
-          return;
+        model: User,
+        attributes: ['username'],
+      },
+    ],
+  })
+    .then((dbCompanyData) => {
+      if (!dbCompanyData) {
+        res.status(404).json({ message: 'No company with that ID' });
+        return;
       }
+      const companies = dbCompanyData.get({ plain: true });
 
-          const companies = dbCompanyData.get({ plain: true });
-          res.render('single-company', { companies });
-      }
-      // res.json(dbRatingsData)
-      )
-  .catch(err => {
+      res.render('single-company', { companies });
+    })
+    .catch((err) => {
+      console.log(err);
       res.status(500).json(err);
-  });
-  });
-
+    });
+});
 
 module.exports = router;
