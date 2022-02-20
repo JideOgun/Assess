@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     Ratings.create({
-        user_id: req.body.user_id,
+        user_id: req.session.user_id,
         company_id: req.body.company_id,
         rating_value: req.body.rating_value
     }).then(dbRatingsData => res.json(dbRatingsData))

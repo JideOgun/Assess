@@ -2,7 +2,7 @@ async function addReviewHandler(event) {
     event.preventDefault();
   
     const reviews_text = document.querySelector('textarea[name="review-body"]').value;
-    let user_id = 6;
+ 
     const company_id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
       ];
@@ -13,7 +13,6 @@ async function addReviewHandler(event) {
       method: 'POST',
       body: JSON.stringify({
         reviews_text,
-        user_id,
         company_id
       }),
       headers: {

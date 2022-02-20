@@ -28,8 +28,9 @@ router.get('/login', (req, res) => {
 
 
 
-router.get('/companies/:id', (req, res) => {
+router.get('/company/:id', (req, res) => {
   Company.findOne({
+    attributes: ['company_name', 'roles', 'id', 'user_id'],
     where: {
       id: req.params.id,
     },
@@ -53,9 +54,10 @@ router.get('/companies/:id', (req, res) => {
         res.status(404).json({ message: 'No company with that ID' });
         return;
       }
+      
       const companies = dbCompanyData.get({ plain: true });
 
-      res.render('single-company', { companies });
+      res.render('single-company', { companies, loggedIn: req.session.loggedIn  });
     })
     .catch((err) => {
       console.log(err);
