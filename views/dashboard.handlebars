@@ -1,11 +1,11 @@
-{{#if data.length}}
+{{!-- {{#if data.length}}
 <section>
   <h2>Companies</h2>
   <ol>
     {{#each data as |i|}}
     <li>
       {{!-- {{> post-info post}} --}}
-      <button>
+      {{!-- <button>
       {{ this.company_name }}
       </button>
       <a href="/dashboard/edit/{{this.is}}" class="edit-link">Edit post</a><
@@ -13,7 +13,7 @@
     {{/each}}
   </ol>
 </section>
-{{/if}}
+{{/if}}  --}}
 
 
 {{#if review.length}}
@@ -24,7 +24,7 @@
     <li>
       {{!-- {{> post-info post}} --}}
       {{ this.reviews_text }}
-      <a href="/dashboard/edit/{{this.is}}" class="edit-link">Edit review</a>
+      <a href="/dashboard/edit/{{this.is}}" class="edit-link">Edit</a>
     </li>
     {{/each}}
   </ol>
