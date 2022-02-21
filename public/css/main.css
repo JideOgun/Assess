@@ -1,4 +1,3 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,182 +5,13 @@
   padding: 0;
 }
 
-.container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.rating-wrap {
-  border-width: thick;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-left: 400pt;
-  padding: 15px;
-  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.center {
-  width: 190px;
-  margin: auto;
-}
-
-#rating-value {
-  width: 110px;
-  margin: 40px auto 0;
-  padding: 10px 5px;
-  text-align: center;
-  -webkit-box-shadow: inset 0 0 2px 1px rgba(46, 204, 113, 0.2);
-          box-shadow: inset 0 0 2px 1px rgba(46, 204, 113, 0.2);
-}
-
-/* Styling star rating */
-.rating {
-  border: none;
-  float: left;
-}
-
-.rating input {
-  display: none;
-}
-
-.rating label::before {
-  content: '\f005';
-  font-family: FontAwesome;
-  margin: 5px;
-  font-size: 1.5rem;
-  display: inline-block;
-}
-
-.rating .halffull::before {
-  content: '\f089';
-  position: absolute;
-  cursor: pointer;
-}
-
-.rating label {
-  color: #ddd;
-  float: right;
-  cursor: pointer;
-}
-
-.rating input:checked + label:hover,
-.rating input:checked ~ label:hover,
-.rating label:hover ~ input:checked ~ label,
-.rating input.checked ~ label:hover ~ label {
-  color: #fce138;
-}
-
-.rating:not(:checked) label:hover,
-.rating:not(:checked) label:hover ~ label {
-  color: #fce138;
-}
-
-#textarea {
-  margin-left: 250pt;
-  width: 60%;
-  height: 150px;
-  padding: 12px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-}
-
-#btn {
-  margin-left: 250pt;
-  background-color: rgba(58, 39, 72, 0.7);
-  /* Green */
-  border: none;
-  color: #f4a740;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-}
-
-.login-form,
-.signup-form {
-  padding: 4rem;
-}
-
-.login-form button,
-.signup-form button {
-  position: absolute;
-  bottom: 0;
-  font-size: 2rem;
-}
-
-.login-form button:hover,
-.signup-form button:hover {
-  color: white;
-}
-
-.login-form label,
-.signup-form label {
-  color: #f4a740;
-  font-size: 1.5rem;
-}
-
-.login-form input,
-.signup-form input {
-  border-radius: 20px;
-  height: 2rem;
-  margin: 0.5rem;
-}
-
-.login-form input:focus,
-.signup-form input:focus {
-  background-color: rgba(58, 39, 72, 0.5);
-}
-
 body {
   background-color: rgba(58, 39, 72, 0.7);
-  font-family: 'Courier New', Courier, monospace;
 }
 
 body a {
   color: #f4a740;
   text-decoration: none;
-}
-
-body a:hover {
-  color: white;
-}
-
-#wrapper {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 5rem;
 }
 
 .header .header__container {
@@ -242,53 +72,12 @@ body a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(58, 39, 72, 0.5);
+  background-color: rgba(58, 39, 72, 0.8);
   font-weight: 500;
   font-size: 2rem;
   width: 30%;
   height: 10rem;
   margin: 1rem;
-  border-radius: 20px;
-}
-
-.btn-no-style {
-  color: #f4a740;
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.btn-no-style:hover {
-  color: white;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4rem;
-  background-color: rgba(58, 39, 72, 0.5);
-}
-
-footer .contact {
-  color: #f4a740;
-  font-size: 1.5rem;
-}
-
-footer img {
-  height: 4rem;
   border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */

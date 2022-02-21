@@ -13,7 +13,14 @@ Benefits.init(
             },
         benefit_name: {
             type: DataTypes.STRING,
-            // allowNull: false
+            allowNull: false
+        },
+        company_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'company',
+                key: 'id'
+            }
         }
         
     },

@@ -1,26 +1,8 @@
-<div>
-  <div>
-    <img src='/images/{{companies.company_name}}.png'
-        width='100px'
-      />
-  </div>
-  
-  <div id="company-name">
-  
-    {{companies.company_name}}
-  </div>
 
-<div id="company-benefits">
-    {{#each companies.benefits}}
 
-{{benefit_name}}
-
-    {{/each}}
+<div id="company-name">
+  {{companies.company_name}}
 </div>
-
- </div>
-  
- {{#if loggedIn}}
 <form class="review-form">
   <div>
     <textarea name="review-body" id="textarea"></textarea>
@@ -30,9 +12,6 @@
     <button type="submit" id="btn">add Review</button>
   </div>
 </form>
-
-
-
 
 <div class="container">
     <div class="rating-wrap">
@@ -54,20 +33,8 @@
     <h4 id="rating-value"></h4>
             
     </div>
-  {{/if}}  
-<div>
-  {{> reviews companies.reviews}}
-  <div>
-    This review was written by {{companies.user.username}} on {{> date companies.reviews}}
-  </div>
-</div>
-<div id="avg">
- The average rating for this company is {{ avg }}
 
-  {{ companies.ratings.rating_value }}
-</div>
-This company has {{companies.reviews.length}} reviews.
-
+{{> reviews companies.reviews}}
         
 <script src="/javascript/star-rating.js"></script>
 <script src="/javascript/add-review.js"></script>

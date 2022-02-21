@@ -7,35 +7,11 @@ router.get('/', (req, res) => {
     Ratings.findAll()
     .then(dbRatingsData =>
        
-        {
-            
-            function avgStar() {
-                // console.log((dbRatingsData));
-                let sum = 0;
-                for (let i = 0; i < dbRatingsData.length; i++) {
-                    const element = dbRatingsData[i];
-                    // console.log(element.dataValues.rating_value);
-                    sum += element.dataValues.rating_value;
-                    
-                }
-                // console.log(sum);
-                let avg = (sum/dbRatingsData.length).toFixed(1);
-                console.log(avg);
-            }
-            avgStar();
-
-
-
-
-            res.json(dbRatingsData);
-        
-        }
-        
+        res.json(dbRatingsData)
         )
     .catch(err => {
         res.status(500).json(err);
     });
-    
     });
 
 

@@ -1,26 +1,12 @@
-@import './resets', './variables', './functions', './mixins', './rating',
-  './login';
+@import './resets', './variables', './functions', './mixins';
 
 body {
   background-color: $primary-clr;
-  font-family: 'Courier New', Courier, monospace;
 
   a {
     color: $text-clr;
     text-decoration: none;
-    &:hover {
-      color: white;
-    }
   }
-}
-
-#wrapper {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 5rem;
 }
 
 .header {
@@ -41,6 +27,7 @@ body {
   }
 }
 
+// nesting
 .main {
   display: flex;
   justify-content: center;
@@ -60,41 +47,6 @@ body {
     width: 30%;
     height: 10rem;
     margin: 1rem;
-    border-radius: 20px;
-  }
-}
-
-.btn-no-style {
-  color: $text-clr;
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  font-size: fontSize(small);
-  font-family: 'Courier New', Courier, monospace;
-  &:hover {
-    color: white;
-  }
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4rem;
-
-  background-color: $dark-primary;
-
-  .contact {
-    color: $text-clr;
-    font-size: fontSize(small);
-  }
-  img {
-    height: 4rem;
     border-radius: 20px;
   }
 }

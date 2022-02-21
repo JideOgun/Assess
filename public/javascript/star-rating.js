@@ -1,4 +1,3 @@
-
 let star = document.querySelectorAll('input');
 
 let star_value = document.querySelector('#rating-value');
