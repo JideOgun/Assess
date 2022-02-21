@@ -51,8 +51,13 @@
     <h4 id="rating-value"></h4>
             
     </div>
+<div>
+  {{> reviews companies.reviews}}
+  <div>
+    This review was written by {{companies.user.username}} on {{> date companies.reviews}}
+  </div>
+</div>
 
-{{> reviews companies.reviews}}
         
 <script src="/javascript/star-rating.js"></script>
 <script src="/javascript/add-review.js"></script>

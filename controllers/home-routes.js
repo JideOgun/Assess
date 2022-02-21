@@ -60,7 +60,7 @@ router.get('/company/:id', (req, res) => {
       }
       
       const companies = dbCompanyData.get({ plain: true });
-
+      console.log(companies);
       res.render('single-company', { companies, loggedIn: req.session.loggedIn  });
     })
     .catch((err) => {
