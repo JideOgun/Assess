@@ -35,7 +35,48 @@ const companyData = [
     company_name: 'Apple',
     roles: "Digital Marketing Manager",
     user_id: 7
-  }
+  },
+  {
+    company_name: 'Samsung',
+    roles: "Data Center Engineer",
+    user_id: 8
+  },
+  {
+    company_name: 'YouTube',
+    roles: "Software Engineer",
+    user_id: 9
+  },
+  {
+    company_name: 'Microsoft',
+    roles: "Software Engineer",
+    user_id: 10
+  },
+  {
+    company_name: 'Dell',
+    roles: "Data Scientist",
+    user_id: 11
+  },
+  {
+    company_name: 'IBM',
+    roles: "Test Automation Developer",
+    user_id: 12
+  },
+  {
+    company_name: 'Cisco',
+    roles: "Senior Backend Engineer",
+    user_id: 13
+  },
+  {
+    company_name: 'Sony',
+    roles: "IT/DevOps Engineer",
+    user_id: 14
+  },
+  {
+    company_name: 'DataVox',
+    roles: "Network Engineer",
+    user_id: 15
+  },
+
 ];
 
 const seedCompanies = () => Company.bulkCreate(companyData);
