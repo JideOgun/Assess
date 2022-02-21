@@ -1,0 +1,31 @@
+@import './variables';
+
+.wrapper {
+  @include flexCenter(row);
+  position: relative;
+}
+
+.login-form,
+.signup-form {
+  padding: 4rem;
+  button {
+    position: absolute;
+    bottom: 0;
+    font-size: fontSize(medium);
+    &:hover {
+      color: white;
+    }
+  }
+  label {
+    color: $text-clr;
+    font-size: fontSize(small);
+  }
+  input {
+    border-radius: 20px;
+    height: 2rem;
+    margin: 0.5rem;
+    &:focus {
+      background-color: $dark-primary;
+    }
+  }
+}

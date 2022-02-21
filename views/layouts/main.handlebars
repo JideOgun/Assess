@@ -6,38 +6,48 @@
     <link rel='stylesheet' href='/css/main.css' />
     <title>Teksess</title>
   </head>
-  <header class='header'>
-    <div class='header__container'>
+  <div id='wrapper'>
+    <div id='content-wrap'>
+      <header class='header'>
+
+        <div class='header__container'>
+          <div class='logo'>
+            <a href='/'>
+              <img src='/images/teksess logo.png' alt='Teksess Logo' />
+            </a>
+
+          </div>
+
+          <div class='nav'>
+
+            <button id='logout' class='btn-no-style'>logout</button>
+            <a href='/login'>login</a>
+
+          </div>
+
+        </div>
+      </header>
+
+      <body>
+
+        <div>
+          {{{body}}}
+        </div>
+      </body>
+    </div>
+
+    <footer>
+
+      <div class='contact'>
+        Contact us &#64
+        <a href='mailto: Contact@Teksess.com'>Contact@Teksess.com</a>
+      </div>
       <div class='logo'>
-        <a href='/'>
-          <img src='/images/teksess logo.png' alt='Teksess Logo' />
-        </a>
-
+        <img src='/images/teksess logo.png' alt='Teksess Logo' />
       </div>
 
-      <div class='nav'>
+    </footer>
 
-        <button id='logout' class='btn-no-style'>logout</button>
-        <a href='/login'>login</a>
-
-      </div>
-
-    </div>
-  </header>
-
-  <body>
-    <div>
-      {{{body}}}
-    </div>
-  </body>
-  <footer>
-    <div class='contact'>
-      Contact us &#64
-    </div>
-    <div class='logo'>
-      <img src='/images/teksess logo.png' alt='Teksess Logo' />
-    </div>
-  </footer>
-
+  </div>
   <script src='/javascript/logout.js'></script>
 </html>
