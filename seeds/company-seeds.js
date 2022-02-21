@@ -76,6 +76,31 @@ const companyData = [
     roles: "Network Engineer",
     user_id: 15
   },
+  {
+    company_name: 'Adobe',
+    roles: "Software Development Engineer",
+    user_id: 16
+  },
+  {
+    company_name: 'Amazon',
+    roles: "Systems Development Engineer",
+    user_id: 17
+  },
+  {
+    company_name: 'Zynga',
+    roles: "Senio Cyber Security Architect",
+    user_id: 18
+  },
+  {
+    company_name: 'Zynga',
+    roles: "Senio Cyber Security Architect",
+    user_id: 19
+  },
+  {
+    company_name: 'HP',
+    roles: "IT Developer & Support Engineer",
+    user_id: 20
+  }
 
 ];
 
