@@ -5,17 +5,17 @@
   </h2>
   <form class="edit-review-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
+      <input name="reviews-title" type="text" value="{{reviews.title}}" />
     </div>
     <div>
-      <textarea name="post-text">{{post.reviews_text}}</textarea>
+      <textarea name="reviews-text">{{reviews_text}}</textarea>
     </div>
     <div>
-      Posted by you on {{format_date post.created_at}}
+      Posted by you on {{format_date reviews.created_at}}
       |
-      <a href="/post/{{post.id}}">{{post.reviews.length}} {{format_plural "comment" post.reviews.length}}</a>
+      <a href="/reviews/{{reviews.id}}">{{reviews.length}} {{format_plural "Reviews" reviews.length}}</a>
     </div>
-    <button type="submit">Save post</button>
+    <button type="submit">Save reviews</button>
     
   </form>
 </article>
@@ -30,7 +30,7 @@
   </div>
 </form>
 
-{{> }}
+{{> reviews }}
 
 <!--Scripts-->
 <script src="/javascript/edit-reviews.js"></script>
