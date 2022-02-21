@@ -78,9 +78,8 @@
   color: #fce138;
 }
 
-.rating > input:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
+.rating:not(:checked) label:hover,
+.rating:not(:checked) label:hover ~ label {
   color: #fce138;
 }
 
@@ -110,6 +109,58 @@
   border-radius: 5px;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.login-form,
+.signup-form {
+  padding: 4rem;
+}
+
+.login-form button,
+.signup-form button {
+  position: absolute;
+  bottom: 0;
+  font-size: 2rem;
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+  color: white;
+}
+
+.login-form label,
+.signup-form label {
+  color: #f4a740;
+  font-size: 1.5rem;
+}
+
+.login-form input,
+.signup-form input {
+  border-radius: 20px;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.login-form input:focus,
+.signup-form input:focus {
+  background-color: rgba(58, 39, 72, 0.5);
+}
+
 body {
   background-color: rgba(58, 39, 72, 0.7);
   font-family: 'Courier New', Courier, monospace;
@@ -118,6 +169,19 @@ body {
 body a {
   color: #f4a740;
   text-decoration: none;
+}
+
+body a:hover {
+  color: white;
+}
+
+#wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;
 }
 
 .header .header__container {
@@ -198,6 +262,10 @@ body a {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.btn-no-style:hover {
+  color: white;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,10 +275,14 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
   background-color: rgba(58, 39, 72, 0.5);
 }
 
-footer div {
+footer .contact {
   color: #f4a740;
   font-size: 1.5rem;
 }
