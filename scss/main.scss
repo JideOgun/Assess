@@ -1,5 +1,5 @@
 @import './resets', './variables', './functions', './mixins', './rating',
-  './login';
+  './login', './dashboard', './single-company';
 
 body {
   background-color: $primary-clr;
@@ -52,7 +52,7 @@ body {
 
   #{&}__div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: $dark-primary;
     font-weight: weight(medium);
