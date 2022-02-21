@@ -1,3 +1,10 @@
+
+ {{#each reviewsArr}}
+<div>
+This company has {{ this.length }} reviews
+</div>
+{{/each}} 
+
 <div class='main'>
   {{#each companies as |company|}}
   
@@ -5,7 +12,17 @@
         
         {{> company-info company}}
       
-  
-  {{/each}}
+  {{companies.reviews.length}}
+  {{/each}} 
+
+ {{#each avgArr}}
+<div id="avg">
+{{ this }}
+</div>
+<br>
+{{/each}}
+<br>
+
+
 
 </div>
