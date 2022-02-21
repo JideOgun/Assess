@@ -21,7 +21,7 @@ async function addReviewHandler(event) {
     });
   
     if (response.ok) {
-     console.log('Success!');
+        document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
     }

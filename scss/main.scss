@@ -1,5 +1,5 @@
 @import './resets', './variables', './functions', './mixins', './rating',
-  './login';
+  './login', './dashboard', './single-company';
 
 body {
   background-color: $primary-clr;
@@ -9,7 +9,7 @@ body {
     color: $text-clr;
     text-decoration: none;
     &:hover {
-      color: white;
+      color: blue;
     }
   }
 }
@@ -52,7 +52,7 @@ body {
 
   #{&}__div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: $dark-primary;
     font-weight: weight(medium);
