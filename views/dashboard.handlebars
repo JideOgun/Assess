@@ -5,7 +5,7 @@
     {{#each data as |i|}}
     <li>
       {{!-- {{> post-info post}} --}}
-      {{!-- <button>
+{{!-- <button>
       {{ this.company_name }}
       </button>
       <a href="/dashboard/edit/{{this.is}}" class="edit-link">Edit post</a><
@@ -15,18 +15,18 @@
 </section>
 {{/if}}  --}}
 
-
 {{#if review.length}}
-<section>
-  <h2>Reviews</h2>
-  <ol>
-    {{#each review as |i|}}
-    <li>
-      {{!-- {{> post-info post}} --}}
-      {{ this.reviews_text }}
-      <a href="/dashboard/edit/{{this.is}}" class="edit-link">Edit</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
+  <section>
+    <h2>Reviews</h2>
+    <ol>
+      {{#each review as |i|}}
+        <li>
+          {{!-- {{> post-info post}} --}}
+
+          {{this.reviews_text}}
+          <a href='/dashboard/edit/{{this.is}}' class='edit-link'>Edit</a>
+        </li>
+      {{/each}}
+    </ol>
+  </section>
 {{/if}}
