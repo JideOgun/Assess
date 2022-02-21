@@ -3,7 +3,7 @@ const { CompanyBenefits } = require('../models');
 const CompanyBenefitsData = [
   {
     company_id: 3,
-    benefits_id: [2, 3, 5],
+    benefits_id: 2,
   },
   {
     company_id: 1,
