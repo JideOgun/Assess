@@ -1,0 +1,37 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Review
+  </h2>
+  <form class="edit-review-form">
+    <div>
+      <input name="post-title" type="text" value="{{post.title}}" />
+    </div>
+    <div>
+      <textarea name="post-text">{{post.reviews_text}}</textarea>
+    </div>
+    <div>
+      Posted by you on {{format_date post.created_at}}
+      |
+      <a href="/post/{{post.id}}">{{post.reviews.length}} {{format_plural "comment" post.reviews.length}}</a>
+    </div>
+    <button type="submit">Save post</button>
+    
+  </form>
+</article>
+
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">review</button>
+  </div>
+</form>
+
+{{> }}
+
+<!--Scripts-->
+<script src="/javascript/edit-reviews.js"></script>
+<script src="/javascript/Reviews.js"></script>
