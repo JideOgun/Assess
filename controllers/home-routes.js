@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
         company.get({ plain: true })
       );
 
-      res.render('homepage', { companies });
+      res.render('homepage', { companies, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);
