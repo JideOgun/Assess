@@ -9,7 +9,7 @@ body {
     color: $text-clr;
     text-decoration: none;
     &:hover {
-      color: blue;
+      color: $secondary-text;
     }
   }
 }
@@ -42,25 +42,32 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(row);
   flex-wrap: wrap;
   margin: 0 auto;
 
-  width: 80%;
+  width: 100%;
+  #{&}__content {
+    @include flexCenter(column);
+    width: 25%;
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 20px;
+  }
 
   #{&}__div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $dark-primary;
+    @include flexCenter(column);
+
+    // background-color: $dark-primary;
     font-weight: weight(medium);
     font-size: fontSize(medium);
     width: 30%;
     height: 10rem;
     margin: 1rem;
     border-radius: 20px;
+  }
+  #{&}__reviews {
+    color: $text-clr;
   }
 }
 
@@ -74,7 +81,7 @@ body {
   font-size: fontSize(small);
   font-family: 'Courier New', Courier, monospace;
   &:hover {
-    color: white;
+    color: $secondary-text;
   }
 }
 

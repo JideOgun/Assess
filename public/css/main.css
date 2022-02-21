@@ -102,7 +102,7 @@
   background-color: rgba(58, 39, 72, 0.7);
   /* Green */
   border: none;
-  color: #f4a740;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -140,12 +140,12 @@
 
 .login-form button:hover,
 .signup-form button:hover {
-  color: white;
+  color: #f4a740;
 }
 
 .login-form label,
 .signup-form label {
-  color: #f4a740;
+  color: white;
   font-size: 1.5rem;
 }
 
@@ -167,12 +167,12 @@ body {
 }
 
 body a {
-  color: #f4a740;
+  color: white;
   text-decoration: none;
 }
 
 body a:hover {
-  color: blue;
+  color: #f4a740;
 }
 
 #wrapper {
@@ -227,22 +227,50 @@ body a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+}
+
+.main .main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  height: 10rem;
+  margin: 1rem;
+  border-radius: 20px;
 }
 
 .main .main__div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(58, 39, 72, 0.5);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-weight: 500;
   font-size: 2rem;
   width: 30%;
@@ -251,8 +279,12 @@ body a:hover {
   border-radius: 20px;
 }
 
+.main .main__reviews {
+  color: white;
+}
+
 .btn-no-style {
-  color: #f4a740;
+  color: white;
   background: none;
   border: none;
   margin: 0;
@@ -263,7 +295,7 @@ body a:hover {
 }
 
 .btn-no-style:hover {
-  color: white;
+  color: #f4a740;
 }
 
 footer {
@@ -283,7 +315,7 @@ footer {
 }
 
 footer .contact {
-  color: #f4a740;
+  color: white;
   font-size: 1.5rem;
 }
 

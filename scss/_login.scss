@@ -13,7 +13,7 @@
     bottom: 0;
     font-size: fontSize(medium);
     &:hover {
-      color: white;
+      color: $secondary-text;
     }
   }
   label {
