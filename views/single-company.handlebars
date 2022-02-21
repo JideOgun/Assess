@@ -57,6 +57,12 @@
     This review was written by {{companies.user.username}} on {{> date companies.reviews}}
   </div>
 </div>
+<div id="avg">
+ The average rating for this company is {{ avg }}
+
+  {{ companies.ratings.rating_value }}
+</div>
+This company has {{companies.reviews.length}} reviews.
 
         
 <script src="/javascript/star-rating.js"></script>
