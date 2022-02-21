@@ -2,7 +2,7 @@ const { Benefits } = require('../models');
 
 const benefitsData = [
     {
-       benefit_name: 'Medical Insurance' 
+       benefit_name: 'Medical Insurance'
     },
     {
         benefit_name: 'Dental Insurance'

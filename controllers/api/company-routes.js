@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Company, Reviews, User } = require('../../models');
+const { Company, Reviews, User, CompanyBenefits, Benefits } = require('../../models');
 
 router.get('/', (req, res) => {
     Company.findAll(
@@ -15,6 +15,9 @@ router.get('/', (req, res) => {
             {
                 model: User,
                 attributes: ['username']
+            },
+            {
+                model: Benefits
             }
         ]
     }
@@ -41,6 +44,9 @@ router.get('/:id', (req, res) => {
                 {
                     model: User,
                     attributes: ['username']
+                },
+                {
+                    model: Benefits
                 }
             ]
         }
@@ -53,12 +59,21 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    Company.create({
-        company_name: req.body.company_name,
-        roles: req.body.roles,
-        user_id: req.body.user_id
-      })
-        .then(dbPostData => res.json(dbPostData))
+    Company.create(req.body)
+        .then((company) => {
+            console.log(req.body);
+            if(req.body.benefitsIds) {
+                const CompanyBenefitsArr = req.body.benefitsIds.map((benefits_id) => {
+                    console.log(company.id, benefits_id);
+                    return {
+                        company_id: company.id, benefits_id
+                    };
+                });
+                return CompanyBenefits.bulkCreate(CompanyBenefitsArr);
+            }
+            res.status(200).json(company);
+        })
+        .then((companyBenefitsIds) => res.status(200).json(companyBenefitsIds))
         .catch(err => {
           console.log(err);
           res.status(500).json(err);
