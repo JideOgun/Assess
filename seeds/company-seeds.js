@@ -88,12 +88,12 @@ const companyData = [
   },
   {
     company_name: 'Zynga',
-    roles: "Senio Cyber Security Architect",
+    roles: "Senior Cyber Security Architect",
     user_id: 18
   },
   {
-    company_name: 'Zynga',
-    roles: "Senio Cyber Security Architect",
+    company_name: 'Atlassian',
+    roles: "Frontend Software Engineer",
     user_id: 19
   },
   {
