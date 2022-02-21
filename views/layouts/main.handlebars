@@ -19,10 +19,12 @@
           </div>
 
           <div class='nav'>
-
+{{#if loggedIn}}
             <button id='logout' class='btn-no-style'>logout</button>
+             <a href='/Dashboard'>Dashboard</a>
+            {{else}}
             <a href='/login'>login</a>
-
+{{/if}}
           </div>
 
         </div>
@@ -49,5 +51,7 @@
     </footer>
 
   </div>
+  {{#if loggedIn}}
   <script src='/javascript/logout.js'></script>
+  {{/if}}
 </html>

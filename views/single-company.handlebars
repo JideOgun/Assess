@@ -20,7 +20,7 @@
 
  </div>
   
-
+ {{#if loggedIn}}
 <form class="review-form">
   <div>
     <textarea name="review-body" id="textarea"></textarea>
@@ -30,6 +30,9 @@
     <button type="submit" id="btn">add Review</button>
   </div>
 </form>
+
+
+
 
 <div class="container">
     <div class="rating-wrap">
@@ -51,6 +54,7 @@
     <h4 id="rating-value"></h4>
             
     </div>
+  {{/if}}  
 <div>
   {{> reviews companies.reviews}}
   <div>
