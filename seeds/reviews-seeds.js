@@ -5,6 +5,7 @@ const reviewsData = [
        reviews_text: 'Work life balance  is amazing',
        user_id: 1,
        company_id: 1
+       
     },
     {
         reviews_text: 'Free cafetaria food, Monday to Friday, breakfast, lunch and dinner',

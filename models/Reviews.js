@@ -31,7 +31,14 @@ Reviews.init(
           model: 'company',
           key: 'id'
         }
-      }
+      },
+      reviews_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'reviews',
+            key: 'id'
+        }
+    },
     },
     {
       sequelize,
