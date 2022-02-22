@@ -406,6 +406,12 @@ footer img {
 /*# sourceMappingURL=main.css.map */
 
 /* Single-company page styling*/
+.reviews-container {
+/* margin-top: 200px; */
+position: relative;
+}
+
+
 .reviews {
   background-color: rgba(58, 39, 72, 0.5);
     padding: 10px;
@@ -426,3 +432,33 @@ footer img {
   width: 50%;
   height: 50%;
 }
+
+.flex-container { 
+  border: 3px solid #fff;
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: black solid 2px;
+border-radius: 5pt;
+}
+
+.flex-child:first-child {
+  margin-right: 10px;
+  height: 500px;
+  width: 20%;
+  
+}
+
+.review-form {
+  /* margin-right: 200px; */
+  width: fit-content;
+  justify-content: center;
+  margin-top: 160px;
+
+}
+#textarea {
+width: max-content;
+/* margin-left: 50%; */
+  }
