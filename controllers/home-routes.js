@@ -115,7 +115,7 @@ router.get('/company/:id', (req, res) => {
       }
       
       const companies = dbCompanyData.get({ plain: true });
-      // console.log(companies.ratings);
+      console.log(companies);
 let sum = 0;
       for (let i = 0; i < companies.ratings.length; i++) {
                   const element = companies.ratings[i]; 
