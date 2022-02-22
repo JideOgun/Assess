@@ -1,9 +1,11 @@
 $primary-clr: rgba(58, 39, 72, 0.7);
 $dark-primary: rgba(58, 39, 72, 0.8);
 
-$text-clr: rgb(244, 167, 64);
+$text-clr: rgb(255, 255, 255);
+$secondary-text: rgb(244, 167, 64);
 
 $font-sizes: (
+  'xsmall': 1rem,
   'small': 1.5rem,
   'medium': 2rem,
   'large': 3rem,
@@ -14,3 +16,7 @@ $font-weights: (
   'medium': 500,
   'bold': 700,
 );
+
+$small-break: 480px;
+$medium-break: 768px;
+$large-break: 1200px;
