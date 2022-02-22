@@ -57,6 +57,12 @@ body {
     padding: 1rem;
     border-radius: 20px;
     border: 2px solid $primary-clr;
+    @media (max-width: 500px) {
+      flex: 1 0 80%;
+    }
+    @media (max-width: 768px) {
+      flex: 1 0 75%;
+    }
   }
 
   #{&}__div {
@@ -72,6 +78,9 @@ body {
   }
   #{&}__reviews {
     color: $text-clr;
+  }
+  @media (min-width: 480px) {
+    flex: 1 0 100%;
   }
 }
 

@@ -3,6 +3,20 @@
 .wrapper {
   @include flexCenter(row);
   position: relative;
+  @media (max-width: 500px) {
+    @include flexCenter(column);
+    flex: 1 0 80%;
+    .login-form {
+      position: relative;
+    }
+  }
+  @media (max-width: 768px) {
+    @include flexCenter(column);
+    flex: 1 0 75%;
+    .login-form {
+      position: relative;
+    }
+  }
 }
 
 .login-form,
