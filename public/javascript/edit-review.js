@@ -1,7 +1,7 @@
 async function editReviewHandler(event) {
     event.preventDefault();
 
-    const reviews_text = document.querySelector('textarea[name="review-body"]').value;
+    const reviews_text = document.querySelector('input[name="review-body"]').value;
 
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
