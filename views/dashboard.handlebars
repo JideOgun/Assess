@@ -15,14 +15,37 @@
 </section>
 {{/if}}  --}}
 
+{{!-- <div class='main__div'>
+    <div>
+      <a href='/company/{{id}}'><img
+          src='/images/{{company_name}}.png'
+          width='100px'
+        /></a>
+
+    </div>
+
+   
+
+  </div>
+  <div class='main__reviews'>
+    {{company_name}}
+    has
+    {{reviews.length}}
+    reviews
+  </div> --}}
+
 {{#if review.length}}
   <section>
     <h2>Reviews</h2>
     <ol>
-      {{#each review as |i|}}
+       
+       {{#each review as |i|}}
         <li>
           {{!-- {{> post-info post}} --}}
-
+      <div>
+        <a href='/company/{{id}}'><img src='/images/{{company_name}}.png' width='100px'/></a>
+      </div>
+          <a href='/company/{{id}}'> {{company_name}} </a>
           {{this.reviews_text}}
           <a href='/dashboard/edit/{{this.is}}' class='edit-link'>Edit</a>
         </li>
