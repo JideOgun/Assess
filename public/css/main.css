@@ -404,3 +404,25 @@ footer img {
   border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
+
+/* Single-company page styling*/
+.reviews {
+  background-color: rgba(58, 39, 72, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+  font-size: 1rem;
+}
+
+.review-text {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.company-benefits {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
