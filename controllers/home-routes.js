@@ -56,8 +56,17 @@ router.get('/company/:id', (req, res) => {
       }
       
       const companies = dbCompanyData.get({ plain: true });
-
-      res.render('single-company', { companies, loggedIn: req.session.loggedIn  });
+      console.log(companies);
+let sum = 0;
+      for (let i = 0; i < companies.ratings.length; i++) {
+                  const element = companies.ratings[i]; 
+                 sum += element.rating_value;
+              }
+              // console.log(sum);
+               let avg = (sum/companies.ratings.length).toFixed(1);
+             
+              // console.log(avg);  
+      res.render('single-company', { companies, avg, loggedIn: req.session.loggedIn  });
     })
     .catch((err) => {
       console.log(err);

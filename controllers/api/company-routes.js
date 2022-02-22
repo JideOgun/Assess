@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { Company, Reviews, User } = require('../../models');
+const { Company, Reviews, User, CompanyBenefits, Benefits } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     Company.findAll(
@@ -52,13 +53,22 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/', (req, res) => {
-    Company.create({
-        company_name: req.body.company_name,
-        roles: req.body.roles,
-        user_id: req.body.user_id
-      })
-        .then(dbPostData => res.json(dbPostData))
+router.post('/', withAuth, (req, res) => {
+    Company.create(req.body)
+        .then((company) => {
+            console.log(req.body);
+            if(req.body.benefitsIds) {
+                const CompanyBenefitsArr = req.body.benefitsIds.map((benefits_id) => {
+                    console.log(company.id, benefits_id);
+                    return {
+                        company_id: company.id, benefits_id
+                    };
+                });
+                return CompanyBenefits.bulkCreate(CompanyBenefitsArr);
+            }
+            res.status(200).json(company);
+        })
+        .then((companyBenefitsIds) => res.status(200).json(companyBenefitsIds))
         .catch(err => {
           console.log(err);
           res.status(500).json(err);
@@ -66,7 +76,7 @@ router.post('/', (req, res) => {
 });
 
 
-router.put('/:id',  (req, res) => {
+router.put('/:id', withAuth,  (req, res) => {
     Company.update(
         {
             company_name: req.body.company_name,
@@ -93,7 +103,7 @@ router.put('/:id',  (req, res) => {
 });
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id',  withAuth, (req, res) => {
     Company.destroy({
         where: {
           id: req.params.id

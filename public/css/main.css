@@ -127,6 +127,54 @@ input:checked + label:hover label:hover ~ label,
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 80%;
+            flex: 1 0 80%;
+  }
+  .wrapper .login-form {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 75%;
+            flex: 1 0 75%;
+  }
+  .wrapper .login-form {
+    position: relative;
+  }
+}
+
 .login-form,
 .signup-form {
   padding: 4rem;
@@ -264,6 +312,22 @@ body a:hover {
   border: 2px solid rgba(58, 39, 72, 0.7);
 }
 
+@media (max-width: 500px) {
+  .main .main__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 80%;
+            flex: 1 0 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .main__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 75%;
+            flex: 1 0 75%;
+  }
+}
+
 .main .main__div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +352,14 @@ body a:hover {
 
 .main .main__reviews {
   color: white;
+}
+
+@media (min-width: 480px) {
+  .main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
 }
 
 .btn-no-style {
@@ -331,3 +403,25 @@ footer img {
   border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
+
+/* Single-company page styling*/
+.reviews {
+  background-color: rgba(58, 39, 72, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+  font-size: 1rem;
+}
+
+.review-text {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.company-benefits {
+  float: left;
+  width: 50%;
+  height: 50%;
+}

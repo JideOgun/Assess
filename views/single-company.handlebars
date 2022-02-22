@@ -1,7 +1,27 @@
+<div>
+  <div>
+    <img src='/images/{{companies.company_name}}.png' width='100px'/>
+  </div>
+  
+    <div id="company-name">
+  
+    {{companies.company_name}}
+    </div>
 
+      <div id="company-benefits">
+      {{#each companies.benefits}}
 
-<div id="company-name">
-  {{companies.company_name}}
+      {{benefit_name}}
+
+      {{/each}}
+      </div>
+      <div>
+      This company has {{companies.reviews.length}} reviews.
+      </div>
+
+<div id="avg">
+ The average rating for this company is {{ avg }}
+  {{ companies.ratings.rating_value }}
 </div>
 <form class="review-form">
   <div>
@@ -33,6 +53,20 @@
     <h4 id="rating-value"></h4>
             
     </div>
+    
+</div>
+  {{/if}}  
+
+
+  <div class="reviews-container">
+  {{> reviews companies.reviews}}
+  </div>
+
+
+
+
+
+
 
 {{> reviews companies.reviews}}
         
@@ -40,5 +74,5 @@
 {{#if loggedIn}}
 <script src="/javascript/add-review.js"></script>
 {{/if}}
-</div>
+
     
