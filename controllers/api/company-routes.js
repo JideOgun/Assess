@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Company, Reviews, User, CompanyBenefits, Benefits } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     Company.findAll(
@@ -58,7 +59,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     Company.create(req.body)
         .then((company) => {
             console.log(req.body);
@@ -81,7 +82,7 @@ router.post('/', (req, res) => {
 });
 
 
-router.put('/:id',  (req, res) => {
+router.put('/:id', withAuth,  (req, res) => {
     Company.update(
         {
             company_name: req.body.company_name,
@@ -108,7 +109,7 @@ router.put('/:id',  (req, res) => {
 });
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id',  withAuth, (req, res) => {
     Company.destroy({
         where: {
           id: req.params.id
