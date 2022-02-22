@@ -1,3 +1,5 @@
+// *** DO NOT MESS WITH THIS**
+
 const { Ratings } = require('../models');
 
 const RatingsData = [
