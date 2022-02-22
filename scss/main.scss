@@ -3,8 +3,7 @@
 
 body {
   background-color: $primary-clr;
-  font-family: 'Courier New', Courier, monospace;
-
+  font-family: Arial, Helvetica, sans-serif;
   a {
     color: $text-clr;
     text-decoration: none;
@@ -44,15 +43,20 @@ body {
 .main {
   @include flexCenter(row);
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 2rem auto;
 
   width: 100%;
+  a {
+    margin-top: 1rem;
+  }
   #{&}__content {
     @include flexCenter(column);
     width: 25%;
-    height: 10rem;
-    margin: 1rem;
+    height: auto;
+    margin: 0.5rem;
+    padding: 1rem;
     border-radius: 20px;
+    border: 2px solid $primary-clr;
   }
 
   #{&}__div {
@@ -79,7 +83,7 @@ body {
   padding: 0;
   cursor: pointer;
   font-size: fontSize(small);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   &:hover {
     color: $secondary-text;
   }
@@ -98,7 +102,7 @@ footer {
 
   .contact {
     color: $text-clr;
-    font-size: fontSize(small);
+    font-size: fontSize(xsmall);
   }
   img {
     height: 4rem;

@@ -93,7 +93,7 @@
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
-  font-size: 16px;
+  font-size: 1rem;
   resize: none;
 }
 
@@ -163,7 +163,7 @@
 
 body {
   background-color: rgba(58, 39, 72, 0.7);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body a {
@@ -233,8 +233,12 @@ body a:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 100%;
+}
+
+.main a {
+  margin-top: 1rem;
 }
 
 .main .main__content {
@@ -252,9 +256,11 @@ body a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 25%;
-  height: 10rem;
-  margin: 1rem;
+  height: auto;
+  margin: 0.5rem;
+  padding: 1rem;
   border-radius: 20px;
+  border: 2px solid rgba(58, 39, 72, 0.7);
 }
 
 .main .main__div {
@@ -291,7 +297,7 @@ body a:hover {
   padding: 0;
   cursor: pointer;
   font-size: 1.5rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-no-style:hover {
@@ -316,7 +322,7 @@ footer {
 
 footer .contact {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 footer img {
