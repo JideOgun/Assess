@@ -127,6 +127,7 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin: 1rem;
   padding: 15px;
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
@@ -251,10 +252,34 @@ input:checked + label:hover label:hover ~ label,
 
 .benefits-wrapper {
   position: absolute;
+  text-align: center;
+  left: 1rem;
 }
 
 .reviews-container {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#company-name {
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 1px solid rgba(58, 39, 72, 0.7);
+}
+
+#company-benefits {
+  color: white;
 }
 
 .reviews {
@@ -264,12 +289,38 @@ input:checked + label:hover label:hover ~ label,
   margin-top: 5px;
   margin-bottom: 5px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .review-text {
   color: white;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .review-rating {
@@ -286,14 +337,31 @@ input:checked + label:hover label:hover ~ label,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: white;
 }
 
 .review-rating .review-amt {
   padding: 0.5rem;
+  border-bottom: 1px solid rgba(58, 39, 72, 0.7);
 }
 
 .review-rating #avg {
-  padding: 0.5rem 0 1rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(58, 39, 72, 0.7);
+}
+
+.review-img {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#company-name {
+  text-align: center;
+}
+
+.card {
+  width: 60%;
+  border-radius: 20px;
 }
 
 body {
