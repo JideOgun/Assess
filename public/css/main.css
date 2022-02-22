@@ -7,6 +7,9 @@
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -20,11 +23,12 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin-left: 400pt;
   padding: 15px;
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
+  border: 1px solid rgba(58, 39, 72, 0.7);
+  border-radius: 20px;
 }
 
 .center {
@@ -86,29 +90,63 @@ input:checked + label:hover label:hover ~ label,
 }
 
 #textarea {
-  margin-left: 250pt;
-  width: 60%;
+  width: 50vw;
   height: 150px;
   padding: 12px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
   background-color: #f8f8f8;
   font-size: 1rem;
   resize: none;
 }
 
-#btn {
-  margin-left: 250pt;
+.review-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.review-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-btn #btn {
+  margin: 1rem 0;
   background-color: rgba(58, 39, 72, 0.7);
-  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
+}
+
+.review-btn #btn:hover {
+  color: #f4a740;
+}
+
+.benefits-wrapper {
+  position: absolute;
 }
 
 .wrapper {
@@ -404,25 +442,3 @@ footer img {
   border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
-
-/* Single-company page styling*/
-.reviews {
-  background-color: rgba(58, 39, 72, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: white;
-  font-size: 1rem;
-}
-
-.review-text {
-  color: white;
-  font-size: 0.7rem;
-}
-
-.company-benefits {
-  float: left;
-  width: 50%;
-  height: 50%;
-}

@@ -1,43 +1,50 @@
-<div>
-  <div>
+<div class="benefits-wrapper">
+  <div class="review-img">
     <img src='/images/{{companies.company_name}}.png' width='100px'/>
   </div>
   
-    <div id="company-name">
+  <div id="company-name">
   
-    {{companies.company_name}}
-    </div>
+    {{companies.company_name}} Benefits
+  </div>
 
-      <div id="company-benefits">
-      {{#each companies.benefits}}
+  <div id="company-benefits">
+    {{#each companies.benefits}}
 
-      {{benefit_name}}
+    {{benefit_name}}
+      <br />
+    {{/each}}
+  </div>
+  
+  
 
-      {{/each}}
-      </div>
-      <div>
-      This company has {{companies.reviews.length}} reviews.
-      </div>
-
-<div id="avg">
- The average rating for this company is {{ avg }}
-  {{ companies.ratings.rating_value }}
 </div>
-
- </div>
   
  {{#if loggedIn}}
 <form class="review-form">
-  <div>
-    <textarea name="review-body" id="textarea"></textarea>
-  </div>
+  <div class="review-wrapper">
+    <div class="review-row">
+      
+      <textarea name="review-body" id="textarea"></textarea>
+    </div>
 
-  <div>
-    <button type="submit" id="btn">add Review</button>
+    <div class="review-btn">
+      <button type="submit" id="btn">Add Review</button>
+    </div>
   </div>
+  
 </form>
 
+<div class="review-rating">
+  <div>
+    This company has {{companies.reviews.length}} reviews.
+  </div>
 
+  <div id="avg">
+    The average rating for this company is {{ avg }}
+    {{ companies.ratings.rating_value }}
+  </div>
+</div>
 
 
 <div class="container">

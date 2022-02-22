@@ -3,7 +3,7 @@
 
 body {
   background-color: $primary-clr;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-style;
   a {
     color: $text-clr;
     text-decoration: none;
@@ -68,7 +68,6 @@ body {
   #{&}__div {
     @include flexCenter(column);
 
-    // background-color: $dark-primary;
     font-weight: weight(medium);
     font-size: fontSize(medium);
     width: 30%;
@@ -92,7 +91,7 @@ body {
   padding: 0;
   cursor: pointer;
   font-size: fontSize(small);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-style;
   &:hover {
     color: $secondary-text;
   }
