@@ -253,7 +253,7 @@ input:checked + label:hover label:hover ~ label,
 .benefits-wrapper {
   position: absolute;
   text-align: center;
-  left: 1rem;
+  left: 3rem;
 }
 
 .reviews-container {
