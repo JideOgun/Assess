@@ -78,6 +78,8 @@
   color: #fce138;
 }
 
+input:checked + label:hover label:hover,
+input:checked + label:hover label:hover ~ label,
 .rating:not(:checked) label:hover,
 .rating:not(:checked) label:hover ~ label {
   color: #fce138;

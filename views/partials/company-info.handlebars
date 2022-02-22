@@ -13,15 +13,10 @@
 
   </div>
   <div class='main__reviews'>
-    {{company_name}}
-    has
+    Total reviews
     {{reviews.length}}
-    reviews
-  </div>
-  {{!-- {{#each avgArr}} --}}
-  <div id='avg'>
-    {{this.rating_value}}
-  </div>
 
-  {{!-- {{/each}} --}}
+  </div>
+  {{company_name.ratings.rating_value}}
+
 </div>
