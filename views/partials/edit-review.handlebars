@@ -5,7 +5,7 @@
   </h2>
   <form class="edit-review-form">
     <div>
-      <input name="reviews-title" type="text" value="{{reviews.title}}" />
+      <input name="reviews-title" type="text" value="{{reviews.id}}" />
     </div>
     <div>
       <textarea name="reviews-text">{{reviews_text}}</textarea>
@@ -15,7 +15,7 @@
       |
       <a href="/reviews/{{reviews.id}}">{{reviews.length}} {{format_plural "Reviews" reviews.length}}</a>
     </div>
-    <button type="submit">Save reviews</button>
+    <button type="submit">Save review</button>
     
   </form>
 </article>
