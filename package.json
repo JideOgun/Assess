@@ -65,7 +65,7 @@
     "semver": "^7.3.5",
     "send": "^0.17.2",
     "seq-queue": "^0.0.5",
-    "sequelize": "^6.16.1",
+    "sequelize": "^6.16.2",
     "sequelize-pool": "^7.1.0",
     "serve-static": "^1.14.2",
     "setprototypeof": "^1.2.0",
