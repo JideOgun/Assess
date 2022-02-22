@@ -1,0 +1,30 @@
+@import './variables', './mixins';
+
+.reviews-container {
+    position: relative;
+  }
+  
+  .reviews {
+    background-color: rgba(58, 39, 72, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .review-text {
+    color: white;
+    font-size: 0.7rem;
+  }
+
+  .review-header {
+    color: white;
+    font-size: 3rem;
+  }
+
+  .div{
+    color: white;
+    font-size: 3rem; 
+  }
