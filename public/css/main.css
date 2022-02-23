@@ -106,6 +106,27 @@
   background-color: rgba(58, 39, 72, 0.5);
 }
 
+.reviews-container {
+  position: relative;
+}
+
+.review-text {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.review-header {
+  color: white;
+  font-size: 3rem;
+  position: relative;
+  left: 2rem;
+}
+
+.div {
+  color: white;
+  font-size: 3rem;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,11 +155,6 @@
   text-align: center;
   border: 1px solid rgba(58, 39, 72, 0.7);
   border-radius: 20px;
-}
-
-.center {
-  width: 190px;
-  margin: auto;
 }
 
 #rating-value {
@@ -253,7 +269,9 @@ input:checked + label:hover label:hover ~ label,
 .benefits-wrapper {
   position: absolute;
   text-align: center;
-  left: 3rem;
+  left: 2.5rem;
+  border: 1px solid rgba(58, 39, 72, 0.7);
+  padding: 0.5rem;
 }
 
 .reviews-container {
@@ -285,11 +303,11 @@ input:checked + label:hover label:hover ~ label,
 .reviews {
   background-color: rgba(58, 39, 72, 0.5);
   padding: 10px;
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  border-radius: 20px;
+  margin: 5px 0;
   color: white;
-  font-size: 1.5rem;
+  width: 60%;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +405,10 @@ body a:hover {
   padding-bottom: 5rem;
 }
 
+.header {
+  background-color: rgba(58, 39, 72, 0.5);
+}
+
 .header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,7 +416,7 @@ body a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
+  padding: 1.5rem 5rem;
 }
 
 .header img {
@@ -420,6 +442,10 @@ body a:hover {
   padding-right: 2rem;
 }
 
+.header a {
+  padding-top: 1rem;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,7 +467,7 @@ body a:hover {
 }
 
 .main a {
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 .main .main__content {

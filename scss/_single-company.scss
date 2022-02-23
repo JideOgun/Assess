@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
->>>>>>> 72855eb92f6f6b8de1f9e473101f40e373a7cdff
 @import './variables', './mixins';
 
 .container {
@@ -18,11 +15,6 @@
   text-align: center;
   border: 1px solid $primary-clr;
   border-radius: 20px;
-}
-
-.center {
-  width: 190px;
-  margin: auto;
 }
 
 #rating-value {
@@ -112,7 +104,9 @@ input:checked + label:hover,
 .benefits-wrapper {
   position: absolute;
   text-align: center;
-  left: 3rem;
+  left: 2.5rem;
+  border: 1px solid $primary-clr;
+  padding: 0.5rem;
 }
 
 .reviews-container {
@@ -132,11 +126,11 @@ input:checked + label:hover,
 .reviews {
   background-color: rgba(58, 39, 72, 0.5);
   padding: 10px;
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  border-radius: 20px;
+  margin: 5px 0;
   color: white;
-  font-size: fontSize(small);
+  width: 60%;
+  font-size: fontSize(xsmall);
   @include flexCenter(column);
 }
 

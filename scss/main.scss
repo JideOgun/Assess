@@ -23,10 +23,11 @@ body {
 }
 
 .header {
+  background-color: $dark-primary;
   #{&}__container {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1.5rem 5rem;
   }
   img {
     height: 7rem;
@@ -38,6 +39,9 @@ body {
     font-size: fontSize(small);
     padding-right: 2rem;
   }
+  a {
+    padding-top: 1rem;
+  }
 }
 
 .main {
@@ -47,7 +51,7 @@ body {
 
   width: 100%;
   a {
-    margin-top: 1rem;
+    margin: 1rem;
   }
   #{&}__content {
     @include flexCenter(column);
