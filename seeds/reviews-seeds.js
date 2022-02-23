@@ -27,7 +27,7 @@ const reviewsData = [
         company_id: 5
     },
     {
-        reviews_text: 'Layed back office enviornment',
+        reviews_text: 'Layed back office envioronment',
         user_id: 6,
         company_id: 6 
     },
