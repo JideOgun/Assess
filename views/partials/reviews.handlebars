@@ -1,12 +1,12 @@
-
-  {{#each this}}
-<div class='reviews  card'>
-    {{reviews_text}}  <span class="review-text"> -- This review was written by {{this.user.username}} on {{format_date created_at}}  </span>
-</div>
-
- <div>
-    
+{{#each this}}
+  <div class='reviews card'>
+    {{reviews_text}}
+    <span class='review-text'><br />
+      -- This review was written by
+      {{this.user.username}}
+      on
+      {{format_date created_at}}
+    </span>
   </div>
-  
-  {{/each}}
 
+{{/each}}

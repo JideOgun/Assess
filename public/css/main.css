@@ -5,111 +5,6 @@
   padding: 0;
 }
 
-.container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.rating-wrap {
-  border-width: thick;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-left: 400pt;
-  padding: 15px;
-  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.center {
-  width: 190px;
-  margin: auto;
-}
-
-#rating-value {
-  width: 110px;
-  margin: 40px auto 0;
-  padding: 10px 5px;
-  text-align: center;
-  -webkit-box-shadow: inset 0 0 2px 1px rgba(46, 204, 113, 0.2);
-          box-shadow: inset 0 0 2px 1px rgba(46, 204, 113, 0.2);
-}
-
-/* Styling star rating */
-.rating {
-  border: none;
-  float: left;
-}
-
-.rating input {
-  display: none;
-}
-
-.rating label::before {
-  content: '\f005';
-  font-family: FontAwesome;
-  margin: 5px;
-  font-size: 1.5rem;
-  display: inline-block;
-}
-
-.rating .halffull::before {
-  content: '\f089';
-  position: absolute;
-  cursor: pointer;
-}
-
-.rating label {
-  color: #ddd;
-  float: right;
-  cursor: pointer;
-}
-
-.rating input:checked + label:hover,
-.rating input:checked ~ label:hover,
-.rating label:hover ~ input:checked ~ label,
-.rating input.checked ~ label:hover ~ label {
-  color: #fce138;
-}
-
-input:checked + label:hover label:hover,
-input:checked + label:hover label:hover ~ label,
-.rating:not(:checked) label:hover,
-.rating:not(:checked) label:hover ~ label {
-  color: #fce138;
-}
-
-#textarea {
-  margin-left: 250pt;
-  width: 60%;
-  height: 150px;
-  padding: 12px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 1rem;
-  resize: none;
-}
-
-#btn {
-  margin-left: 250pt;
-  background-color: rgba(58, 39, 72, 0.7);
-  /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +105,282 @@ input:checked + label:hover label:hover ~ label,
   background-color: rgba(58, 39, 72, 0.5);
 }
 
+.reviews-container {
+  position: relative;
+}
+
+.review-text {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.review-header {
+  color: white;
+  font-size: 3rem;
+  position: relative;
+  left: 2rem;
+}
+
+.div {
+  color: white;
+  font-size: 3rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rating-wrap {
+  border-width: thick;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1rem;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid rgba(58, 39, 72, 0.7);
+  border-radius: 20px;
+}
+
+#rating-value {
+  width: 110px;
+  margin: 40px auto 0;
+  padding: 10px 5px;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 2px 1px rgba(46, 204, 113, 0.2);
+          box-shadow: inset 0 0 2px 1px rgba(46, 204, 113, 0.2);
+}
+
+/* Styling star rating */
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label::before {
+  content: '\f005';
+  font-family: FontAwesome;
+  margin: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.rating .halffull::before {
+  content: '\f089';
+  position: absolute;
+  cursor: pointer;
+}
+
+.rating label {
+  color: #ddd;
+  float: right;
+  cursor: pointer;
+}
+
+.rating input:checked + label:hover,
+.rating input:checked ~ label:hover,
+.rating label:hover ~ input:checked ~ label,
+.rating input.checked ~ label:hover ~ label {
+  color: #fce138;
+}
+
+input:checked + label:hover label:hover,
+input:checked + label:hover label:hover ~ label,
+.rating:not(:checked) label:hover,
+.rating:not(:checked) label:hover ~ label {
+  color: #fce138;
+}
+
+#textarea {
+  width: 50vw;
+  height: 150px;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  resize: none;
+}
+
+.review-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.review-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-btn #btn {
+  margin: 1rem 0;
+  background-color: rgba(58, 39, 72, 0.7);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.review-btn #btn:hover {
+  color: #f4a740;
+}
+
+.benefits-wrapper {
+  position: absolute;
+  text-align: center;
+  left: 2.5rem;
+  border: 1px solid rgba(58, 39, 72, 0.7);
+  padding: 0.5rem;
+}
+
+.reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#company-name {
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 1px solid rgba(58, 39, 72, 0.7);
+}
+
+#company-benefits {
+  color: white;
+}
+
+.reviews {
+  background-color: rgba(58, 39, 72, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px 0;
+  color: white;
+  width: 60%;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review-text {
+  color: white;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.review-rating .review-amt {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(58, 39, 72, 0.7);
+}
+
+.review-rating #avg {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(58, 39, 72, 0.7);
+}
+
+.review-img {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#company-name {
+  text-align: center;
+}
+
+.card {
+  width: 60%;
+  border-radius: 20px;
+}
+
 body {
   background-color: rgba(58, 39, 72, 0.7);
   font-family: Arial, Helvetica, sans-serif;
@@ -233,6 +404,10 @@ body a:hover {
   padding-bottom: 5rem;
 }
 
+.header {
+  background-color: rgba(58, 39, 72, 0.5);
+}
+
 .header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,7 +415,7 @@ body a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
+  padding: 1.5rem 5rem;
 }
 
 .header img {
@@ -266,6 +441,10 @@ body a:hover {
   padding-right: 2rem;
 }
 
+.header a {
+  padding-top: 1rem;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +466,7 @@ body a:hover {
 }
 
 .main a {
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 .main .main__content {
@@ -403,25 +582,3 @@ footer img {
   border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
-
-/* Single-company page styling*/
-.reviews {
-  background-color: rgba(58, 39, 72, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: white;
-  font-size: 1rem;
-}
-
-.review-text {
-  color: white;
-  font-size: 0.7rem;
-}
-
-.company-benefits {
-  float: left;
-  width: 50%;
-  height: 50%;
-}
