@@ -23,40 +23,41 @@ router.get('/', (req, res) => {
         const reviewAll = reviewdata.map(review =>
           review.get({ plain: true })
          );
-         console.log(reviewAll);
+      //    console.log(reviewAll);
          let username =  [req.session.username];
          console.log(username);
        res.render('dashboard',  {loggedIn: true, review: reviewAll, username});
         });
-  } else { res.redirect('/login');}
+  } else { res.redirect('/login'); }
    });
 
 
    router.get('/edit/:id', withAuth, (req, res) => {
-      Reviews.findByPk(req.params.id, {
+      
+      Company.findByPk(req.params.id, {
           include: [
               {
-                model: Company,
-                attributes: ['id', 'user_id', 'createdAt'],
+                model: Reviews,
+                attributes: ['id','reviews_text', 'createdAt'],
                 include: {
                   model: User,
                   attributes: ['username']
                 }
               },
-              {
-                model: User,
-                attributes: ['username']
+              { 
+                    model: User,
+                    attributes: ['username']
               }
+            
             ]
       })
       .then(dbReviewsData => {
+            
+            // console.log(dbReviewsData);
           if (dbReviewsData) {
               const reviews = dbReviewsData.get({ plain: true });
-              console.log(reviews);
-              res.render('edit-review', {
-                reviews,
-                loggedIn: true
-              });
+            //   console.log(reviews);
+              res.render('edit-review', { reviews, loggedIn: true });
             } else {
               res.status(404).end();
             }
