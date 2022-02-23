@@ -238,6 +238,7 @@ input:checked + label:hover label:hover ~ label,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 2rem;
 }
 
 .review-btn {
