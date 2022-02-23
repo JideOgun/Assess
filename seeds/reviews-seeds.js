@@ -35,6 +35,26 @@ const reviewsData = [
         reviews_text: 'STAY AWAY, DO NOT WORK HERE',
         user_id: 7,
         company_id: 7
+    },
+    {
+        reviews_text: `If you can't stand micromanaging, don't work here`,
+        user_id: 8,
+        company_id: 8
+    },
+    {
+        reviews_text: `Work from home options`,
+        user_id: 9,
+        company_id: 9
+    },
+    {
+        reviews_text: `Lots of corporate discounts yay!`,
+        user_id: 10,
+        company_id: 10
+    },
+    {
+        reviews_text: `Flexible schedules`,
+        user_id: 11,
+        company_id: 11
     }
 
 ];
