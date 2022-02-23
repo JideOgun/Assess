@@ -22,11 +22,16 @@ body {
   @media (max-width: 768px) {
     flex: 1 0 75%;
     .review-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter(column);
       width: 100%;
     }
+    .benefits-wrapper {
+      position: relative;
+      left: 0rem;
+      border: none;
+      width: 100%;
+    }
+
     .reviews {
       width: 90%;
     }
@@ -34,12 +39,13 @@ body {
       width: 80vw;
     }
     .card {
-      width: 100vw;
+      width: 90vw;
     }
   }
   @media (max-width: 1200px) {
     flex: 1 0 80%;
-    .benefits-wrapper {
+    #company-name,
+    #company-benefits {
       display: none;
     }
   }
