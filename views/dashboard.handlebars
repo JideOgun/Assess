@@ -1,25 +1,40 @@
 {{#if review.length}}
   <section>
 
-
-    <h2 class='review-header'> {{ username }}'s  Reviews</h2>
+    <h2 class='review-header'> {{username}}'s Reviews</h2>
 
     {{#each review as |i|}}
       <div class='reviews-container'>
         <div class='reviews'>
-          {{this.reviews_text}}  ---- this review was made on {{format_date createdAt}}
-            <div>
-              {{company.company_name}}
-
+          <div class='review-div'>
+            {{this.reviews_text}}<br />
+            ---- this review was made on
+            {{format_date createdAt}}
+          </div>
+          <div class='img-wrapper'>
+            <div class='dashboard-company'>
               <a href='/company/{{company_id}}'><img
-          src='/images/{{company.company_name}}.png'
-          width='100px'
-        /></a>
+                  src='/images/{{company.company_name}}.png'
+                  width='100px'
+                /></a>
+              <a href='/company/{{company_id}}'>
+                <p>
+                  {{company.company_name}}
+                </p>
+              </a>
+
             </div>
-          <a href='/dashboard/edit/{{id}}' class='edit-link'>Edit</a>
+          </div>
+
         </div>
       </div>
+      <div class='edit-btn'>
+        <div id='edit-btn'>
+          <a href='/dashboard/edit/{{id}}' class='edit-link'>Edit</a>
 
+        </div>
+
+      </div>
     {{/each}}
 
   </section>

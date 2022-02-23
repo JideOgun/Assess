@@ -1,0 +1,56 @@
+@import './variables';
+
+.edit-wrapper {
+  width: 100vw;
+  @include flexCenter(column);
+  margin: 1rem 0 0 0;
+  a {
+    margin: 0 0 0.5rem 0;
+  }
+  h2 {
+    font-size: fontSize(large);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    color: $text-clr;
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+.posted {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: $text-clr;
+}
+
+.btn-style {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .edit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: $primary-clr;
+    border: none;
+    color: $text-clr;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    &:hover {
+      color: $secondary-text;
+    }
+    @media (max-width: 768px) {
+      width: 40%;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+}
