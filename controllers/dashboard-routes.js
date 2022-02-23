@@ -52,7 +52,7 @@ router.get('/', (req, res) => {
       .then(dbReviewsData => {
           if (dbReviewsData) {
               const reviews = dbReviewsData.get({ plain: true });
-              console.log(reviews)
+              console.log(reviews);
               res.render('edit-review', {
                 reviews,
                 loggedIn: true

@@ -7,8 +7,8 @@
     {{!-- <div>
       <input name="reviews-body" type="text" value="{{reviews.id}}" />
     </div> --}}
-    <div>
-      <textarea name="reviews-text">{{reviews_text}}</textarea>
+    <div class="review-row">
+      <textarea name="review-body" id="textarea">{{reviews_text}}</textarea>
     </div>
     <div>
       Posted by you on {{format_date reviews.createdAt}}
@@ -22,6 +22,7 @@
 
 
 <!--Scripts-->
-<script src="/javascript/edit-reviews.js"></script>
-<script src="/javascript/Reviews.js"></script>
+{{#if loggedIn}}
+<script src="/javascript/edit-review.js"></script>
 <script src="/javascript/delete-review.js"></script>
+{{/if}}
