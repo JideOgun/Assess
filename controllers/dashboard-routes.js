@@ -4,7 +4,7 @@ const { Company, Reviews, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
-      console.log("dashboard", req.session);
+      // console.log("dashboard", req.session);
       if (req.session.loggedIn) {
       Reviews.findAll({
          where: {user_id: req.session.user_id},
@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
          );
       //    console.log(reviewAll);
          let username =  [req.session.username];
-         console.log(username);
+      //    console.log(username);
        res.render('dashboard',  {loggedIn: true, review: reviewAll, username});
         });
   } else { res.redirect('/login'); }
