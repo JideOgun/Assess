@@ -13,9 +13,16 @@
 
   </div>
   <div class='main__reviews'>
-    Total reviews
+    Total Reviews
     {{reviews.length}}
 
   </div>
+
+  {{#each avgArr}}
+    <div id='avg'>
+      {{this}}
+    </div>
+
+  {{/each}}
 
 </div>

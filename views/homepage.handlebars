@@ -3,22 +3,12 @@
 
 <div class='main'>
   {{#each companies as |company|}}
-  
-      
-        
+
         {{> company-info company}}
       
   {{companies.reviews.length}}
   {{/each}} 
-
- {{!-- {{#each avgArr}}
-<div id="avg">
-{{this}}
 </div>
-
-{{/each}}
-<br> --}}
-
-
-
+<div>
+  {{> company-info this}}    
 </div>

@@ -1,10 +1,168 @@
-@import './variables';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
+@import './variables', './mixins';
 
-// .reviews-container {
-    
-//     background-color: brown;
-//     padding: 10px;
-//     border-radius: 5px;
-//     margin-top: 5px;
-//     margin-bottom: 5px;
-// }
+.container {
+  @include flexCenter(column);
+}
+
+.rating-wrap {
+  border-width: thick;
+  width: max-content;
+  margin: 1rem;
+
+  padding: 15px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid $primary-clr;
+  border-radius: 20px;
+}
+
+#rating-value {
+  width: 110px;
+  margin: 40px auto 0;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: inset 0 0 2px 1px rgba(46, 204, 113, 0.2);
+}
+
+/* Styling star rating */
+
+.rating {
+  border: none;
+  float: left;
+  input {
+    display: none;
+  }
+  label::before {
+    content: '\f005';
+    font-family: FontAwesome;
+    margin: 5px;
+    font-size: fontSize(small);
+    display: inline-block;
+  }
+  .halffull::before {
+    content: '\f089';
+    position: absolute;
+    cursor: pointer;
+  }
+  label {
+    color: #ddd;
+    float: right;
+    cursor: pointer;
+  }
+  input:checked + label:hover,
+  input:checked ~ label:hover,
+  label:hover ~ input:checked ~ label,
+  input.checked ~ label:hover ~ label {
+    color: #fce138;
+  }
+}
+
+input:checked + label:hover,
+.rating:not(:checked) {
+  label:hover,
+  label:hover ~ label {
+    color: #fce138;
+  }
+}
+
+#textarea {
+  width: 50vw;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  font-size: fontSize(xsmall);
+  resize: none;
+}
+
+.review-form {
+  @include flexCenter(row);
+}
+
+.review-btn {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  #btn {
+    margin: 1rem 0;
+    background-color: $primary-clr;
+    border: none;
+    color: $text-clr;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    &:hover {
+      color: $secondary-text;
+    }
+  }
+}
+
+.benefits-wrapper {
+  position: absolute;
+  text-align: center;
+  left: 2.5rem;
+  border: 1px solid $primary-clr;
+  padding: 0.5rem;
+}
+
+.reviews-container {
+  @include flexCenter(column);
+}
+
+#company-name {
+  font-size: fontSize(small);
+  color: $text-clr;
+  border-bottom: 1px solid $primary-clr;
+}
+
+#company-benefits {
+  color: $text-clr;
+}
+
+.reviews {
+  background-color: rgba(58, 39, 72, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px 0;
+  color: white;
+  width: 60%;
+  font-size: fontSize(xsmall);
+  @include flexCenter(column);
+}
+
+.review-text {
+  color: white;
+  font-size: fontSize(xsmall);
+  @include flexCenter(column);
+}
+
+.review-rating {
+  @include flexCenter(column);
+  color: $text-clr;
+  .review-amt {
+    padding: 0.5rem;
+    border-bottom: 1px solid $primary-clr;
+  }
+  #avg {
+    padding: 0.5rem;
+    border-bottom: 1px solid $primary-clr;
+  }
+}
+
+.review-img {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#company-name {
+  text-align: center;
+}
+
+.card {
+  width: 60%;
+  border-radius: 20px;
+}
