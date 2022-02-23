@@ -117,6 +117,7 @@ input:checked + label:hover,
 #company-name {
   font-size: fontSize(small);
   color: $text-clr;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid $primary-clr;
 }
 

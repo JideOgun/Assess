@@ -1,13 +1,21 @@
 {{#if review.length}}
   <section>
 
-    <h2 class='review-header'> Reviews </h2>
+
+    <h2 class='review-header'> {{ username }}'s  Reviews</h2>
 
     {{#each review as |i|}}
       <div class='reviews-container'>
         <div class='reviews'>
-          {{this.reviews_text}}
+          {{this.reviews_text}}  ---- this review was made on {{format_date createdAt}}
+            <div>
+              {{company.company_name}}
 
+              <a href='/company/{{id}}'><img
+          src='/images/{{company.company_name}}.png'
+          width='100px'
+        /></a>
+            </div>
           <a href='/dashboard/edit/{{user_id}}' class='edit-link'>Edit</a>
         </div>
       </div>
