@@ -13,12 +13,48 @@ body {
   }
 }
 
+#wrapper {
+  position: relative;
+  min-height: 100vh;
+  @media (max-width: 500px) {
+    flex: 1 0 80%;
+  }
+  @media (max-width: 768px) {
+    flex: 1 0 75%;
+    .review-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .reviews {
+      width: 90%;
+    }
+    #textarea {
+      width: 80vw;
+    }
+    .card {
+      width: 100vw;
+    }
+  }
+  @media (max-width: 1200px) {
+    flex: 1 0 80%;
+    .benefits-wrapper {
+      display: none;
+    }
+  }
+}
+
+#content-wrap {
+  padding-bottom: 5rem;
+}
+
 .header {
   background-color: $dark-primary;
   #{&}__container {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 4rem;
   }
   img {
     height: 7rem;
