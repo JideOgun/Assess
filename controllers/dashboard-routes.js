@@ -7,22 +7,25 @@ router.get('/', (req, res) => {
       if (req.session.loggedIn) {
       Reviews.findAll({
          where: {user_id: req.session.user_id},
-      //    attributes: ['created_at'],
          include: [
                  { 
                   model: User,
                attributes: ['username']
+                  },
+                  {
+                        model: Company,
+                        attributes: ['company_name']
                   }
          ]
-              
-         
           })
     .then(reviewdata => {
         const reviewAll = reviewdata.map(review =>
           review.get({ plain: true })
          );
          console.log(reviewAll);
-       res.render('dashboard', {loggedIn: true, review: reviewAll});
+         let username =  [req.session.username];
+         console.log(username);
+       res.render('dashboard',  {loggedIn: true, review: reviewAll, username});
         });
   } else { res.redirect('/login');}
    });
