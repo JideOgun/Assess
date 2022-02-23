@@ -35,6 +35,31 @@ const userData = [
         username: 'James Harden',
         email: 'JamesH@gmail.com',
         password: 'JamesHarden'
+    },
+    {
+        username: 'Lionel Messi',
+        email: 'LionelM@gmail.com',
+        password: 'LionelMessi'
+    },
+    {
+        username: 'Cristiano Ronaldo',
+        email: 'CristianoR@gmail.com',
+        password: 'CristianoRonaldo'
+    },
+    {
+        username: 'Diego Maradona',
+        email: 'DiegoM@gmail.com',
+        password: 'DiegoMaradona'
+    },
+    {
+        username: 'David Beckham',
+        email: 'DavidB@gmail.com',
+        password: 'DavidBeckham'
+    },
+    {
+        username: 'Kylian Mbappe',
+        email: 'KylianM@gmail.com',
+        password: 'KylianMbappe'
     }
 ];
 
