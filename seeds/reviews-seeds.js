@@ -7,7 +7,7 @@ const reviewsData = [
        company_id: 1
     },
     {
-        reviews_text: 'Free cafetaria food, Monday to Friday, breakfast, lunch and dinner',
+        reviews_text: 'Free cafeteria food, Monday to Friday, breakfast, lunch and dinner',
         user_id: 2,
         company_id: 2
     },
@@ -17,7 +17,7 @@ const reviewsData = [
         company_id: 3 
     },
     {
-        reviews_text: 'Managment is horrific',
+        reviews_text: 'Management is horrific',
         user_id: 4,
         company_id: 4 
     },
