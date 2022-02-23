@@ -1,3 +1,4 @@
+
 <div class="benefits-wrapper">
   <div class="review-img">
     <img src='/images/{{companies.company_name}}.png' width='100px'/>
@@ -12,11 +13,9 @@
     {{#each companies.benefits}}
       <br />
     {{benefit_name}}
-      <br /><br />
+      <br />
     {{/each}}
   </div>
-  
-  
 
 </div>
   
@@ -71,17 +70,9 @@
 </div>
   {{/if}}  
 
-
   <div class="reviews-container">
   {{> reviews companies.reviews}}
   </div>
-
-
-
-
-
-
-
         
 <script src="/javascript/star-rating.js"></script>
 {{#if loggedIn}}

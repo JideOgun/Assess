@@ -16,6 +16,33 @@ body {
 #wrapper {
   position: relative;
   min-height: 100vh;
+  @media (max-width: 500px) {
+    flex: 1 0 80%;
+  }
+  @media (max-width: 768px) {
+    flex: 1 0 75%;
+    .review-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .reviews {
+      width: 90%;
+    }
+    #textarea {
+      width: 80vw;
+    }
+    .card {
+      width: 100vw;
+    }
+  }
+  @media (max-width: 1200px) {
+    flex: 1 0 80%;
+    .benefits-wrapper {
+      display: none;
+    }
+  }
 }
 
 #content-wrap {
@@ -23,10 +50,11 @@ body {
 }
 
 .header {
+  background-color: $dark-primary;
   #{&}__container {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1.5rem 4rem;
   }
   img {
     height: 7rem;
@@ -38,6 +66,9 @@ body {
     font-size: fontSize(small);
     padding-right: 2rem;
   }
+  a {
+    padding-top: 1rem;
+  }
 }
 
 .main {
@@ -47,7 +78,7 @@ body {
 
   width: 100%;
   a {
-    margin-top: 1rem;
+    margin: 1rem;
   }
   #{&}__content {
     @include flexCenter(column);
