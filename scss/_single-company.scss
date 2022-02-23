@@ -80,6 +80,7 @@ input:checked + label:hover,
 
 .review-form {
   @include flexCenter(row);
+  margin-top: 2rem;
 }
 
 .review-btn {
