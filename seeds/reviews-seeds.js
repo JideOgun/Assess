@@ -86,6 +86,21 @@ const reviewsData = [
         user_id: 17,
         company_id: 17
     },
+    {
+        reviews_text: `Perfect workplace for creative people`,
+        user_id: 18,
+        company_id: 18
+    },
+    {
+        reviews_text: `Just as organized as their software`,
+        user_id: 19,
+        company_id: 19
+    },
+    {
+        reviews_text: `High turnover rate`,
+        user_id: 20,
+        company_id: 20
+    }
 
 ];
 
