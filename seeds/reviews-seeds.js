@@ -170,10 +170,22 @@ const reviewsData = [
         reviews_text: `The work environment is very casual, I enjoyed working for Facebook`,
         user_id: 17,
         company_id: 2
+    },
+    {
+        reviews_text: `DO NOT work here. Work for a small start-up.`,
+        user_id: 11,
+        company_id: 2
+    },
+    {
+        reviews_text: `I got more than plenty of PTO at Facebook! Would recommend.`,
+        user_id: 16,
+        company_id: 2
+    },
+    {
+        reviews_text: `I applied at Facebook but never got a call back. I learned a lot from the interview though.`,
+        user_id: 3,
+        company_id: 2
     }
-
-    
-
 
 ];
 
