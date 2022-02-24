@@ -156,7 +156,21 @@ const reviewsData = [
         user_id: 1,
         company_id: 2
     },
-    
+    {
+        reviews_text: `Working for Facebook was great! I helped me land my current job.`,
+        user_id: 12,
+        company_id: 2
+    },
+    {
+        reviews_text: `I was a developer at Facebook for two years. I learned almost everything there is to know about Java`,
+        user_id: 15,
+        company_id: 2
+    },
+    {
+        reviews_text: `The work environment is very casual, I enjoyed working for Facebook`,
+        user_id: 17,
+        company_id: 2
+    }
 
     
 
