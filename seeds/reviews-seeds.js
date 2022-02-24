@@ -436,8 +436,6 @@ const reviewsData = [
         user_id: 10,
         company_id: 3
     },
-
-
     {
         reviews_text: `Great benefits`,
         user_id: 11,
@@ -487,6 +485,56 @@ const reviewsData = [
         reviews_text: `Very strict working hours`,
         user_id: 18,
         company_id: 4
+    },
+    {
+        reviews_text: `They held it down like H-Town`,
+        user_id: 19,
+        company_id: 5
+     },
+    {
+       reviews_text: 'Work life balance  is amazing',
+       user_id: 20,
+       company_id: 5
+    },
+    {
+        reviews_text: 'Free cafeteria food, Monday to Friday, breakfast, lunch and dinner',
+        user_id: 21,
+        company_id: 5
+    },
+    {
+        reviews_text: 'Great benefits',
+        user_id: 22,
+        company_id: 5
+    },
+    {
+        reviews_text: 'Management is horrific',
+        user_id: 1,
+        company_id: 5
+    },
+    {
+        reviews_text: 'Great office space',
+        user_id: 2,
+        company_id: 5
+    },
+    {
+        reviews_text: 'Layed back office envioronment',
+        user_id: 3,
+        company_id: 5
+    },
+    {
+        reviews_text: 'STAY AWAY, DO NOT WORK HERE',
+        user_id: 4,
+        company_id: 5
+    },
+    {
+        reviews_text: `If you can't stand micromanaging, don't work here`,
+        user_id: 5,
+        company_id: 5
+    },
+    {
+        reviews_text: `Work from home options`,
+        user_id: 6,
+        company_id: 5
     },
 
 
