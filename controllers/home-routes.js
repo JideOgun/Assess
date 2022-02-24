@@ -76,12 +76,23 @@ router.get('/', (req, res) => {
     });
 });
 
+
+// login Route 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
   }
   res.render('login');
+});
+
+// About-Us Route
+router.get('/about-us/', (req, res) => {
+  // if (req.session.loggedIn) {
+  //   res.redirect('/aboutus');
+  //   return;
+  // }
+  res.render('about-us');
 });
 
 router.get('/company/:id', (req, res) => {
