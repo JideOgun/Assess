@@ -311,6 +311,31 @@ const reviewsData = [
         user_id: 18,
         company_id: 21
     },
+    {
+        reviews_text: 'Great office space',
+        user_id: 17,
+        company_id: 21
+    },
+    {
+        reviews_text: 'Layed back office envioronment',
+        user_id: 16,
+        company_id: 21 
+    },
+    {
+        reviews_text: 'STAY AWAY, DO NOT WORK HERE',
+        user_id: 15,
+        company_id: 21
+    },
+    {
+        reviews_text: `If you can't stand micromanaging, don't work here`,
+        user_id: 14,
+        company_id: 21
+    },
+    {
+        reviews_text: `Work from home options`,
+        user_id: 13,
+        company_id: 21
+    },
 
 
 ];
