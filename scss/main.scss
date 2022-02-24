@@ -61,6 +61,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 4rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   img {
     height: 7rem;
@@ -74,6 +81,24 @@ body {
   }
   a {
     padding-top: 1rem;
+  }
+  .slogan-wrapper {
+    display: flex;
+
+    flex-direction: row;
+    @media (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .slogan {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: fontSize(medium);
+    left: 2rem;
+    position: relative;
   }
 }
 
