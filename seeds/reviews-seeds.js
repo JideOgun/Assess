@@ -2,13 +2,98 @@ const { Reviews } = require('../models');
 
 const reviewsData = [
     {
-       reviews_text: 'Work life balance  is amazing',
+       reviews_text: 'Work life balance is amazing',
        user_id: 1,
        company_id: 1
     },
     {
+        reviews_text: 'Google > Safari',
+        user_id: 2,
+        company_id: 1
+     },
+     {
+        reviews_text: 'Medical insurance is great at Google.',
+        user_id: 1,
+        company_id: 1
+     },
+     {
+        reviews_text: 'I learned a lot while working at Google. Great team environment.',
+        user_id: 6,
+        company_id: 1
+     },
+     {
+        reviews_text: 'I use google every day!',
+        user_id: 3,
+        company_id: 1
+     },
+     {
+        reviews_text: 'Company events were so fun here!',
+        user_id: 17,
+        company_id: 1
+     },
+     {
+        reviews_text: 'I use google every day!',
+        user_id: 18,
+        company_id: 1
+     },
+     {
+        reviews_text: 'Google, a developers best friend!',
+        user_id: 4,
+        company_id: 1
+     },
+     {
+        reviews_text: 'Google in Austin, Texas',
+        user_id: 5,
+        company_id: 1
+     },
+    {
+        reviews_text: 'Google is a great place to work. They have so many benefits.',
+        user_id: 2,
+        company_id: 1
+     },
+     {
+        reviews_text: 'The free food is awesome, I never have to bring my own lunch.',
+        user_id: 7,
+        company_id: 1
+     }, 
+     {
         reviews_text: 'Free cafeteria food, Monday to Friday, breakfast, lunch and dinner',
         user_id: 2,
+        company_id: 2
+    },
+    {
+        reviews_text: 'Facebook > Meta',
+        user_id: 1,
+        company_id: 2
+    },
+    {
+        reviews_text: 'Working for Facebook was great! I helped me land my current job.',
+        user_id: 12,
+        company_id: 2
+    },
+    {
+        reviews_text: 'I was a developer at Facebook for two years. I learned almost everything there is to know about Java',
+        user_id: 15,
+        company_id: 2
+    },
+    {
+        reviews_text: 'The work environment is very casual, I enjoyed working for Facebook',
+        user_id: 17,
+        company_id: 2
+    },
+    {
+        reviews_text: 'DO NOT work here. Work for a small start-up.',
+        user_id: 11,
+        company_id: 2
+    },
+    {
+        reviews_text: 'I got more than plenty of PTO at Facebook! Would recommend.',
+        user_id: 16,
+        company_id: 2
+    },
+    {
+        reviews_text: 'I applied at Facebook but never got a call back. I learned a lot from the interview though.',
+        user_id: 3,
         company_id: 2
     },
     {
