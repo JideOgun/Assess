@@ -25,4 +25,4 @@ async function editReviewHandler(event) {
 
   }
   
-  document.querySelector('.edit-reviews-form').addEventListener('submit', editReviewHandler);
+  document.querySelector('.edit-btn').addEventListener('submit', editReviewHandler);
