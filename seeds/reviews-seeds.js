@@ -185,7 +185,22 @@ const reviewsData = [
         reviews_text: `I applied at Facebook but never got a call back. I learned a lot from the interview though.`,
         user_id: 3,
         company_id: 2
-    }
+    },
+    {
+        reviews_text: `Great benefits`,
+        user_id: 3,
+        company_id: 3 
+    },
+    {
+        reviews_text: `Management is horrific`,
+        user_id: 4,
+        company_id: 4 
+    },
+    {
+        reviews_text: `Great office space`,
+        user_id: 5,
+        company_id: 5
+    },
 
 ];
 
