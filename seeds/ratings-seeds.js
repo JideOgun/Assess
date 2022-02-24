@@ -101,6 +101,11 @@ const RatingsData = [
     user_id: 20,
     company_id: 20,
     rating_value: 3,
+  },
+  {
+    user_id: 22,
+    company_id: 21,
+    rating_value: 5,
   }
 ];
 
