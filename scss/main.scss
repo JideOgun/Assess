@@ -1,5 +1,6 @@
 @import './resets', './variables', './functions', './mixins', './login',
   './dashboard', './single-company', './edit', './about-us';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
 
 body {
   background-color: $primary-clr;
@@ -202,11 +203,6 @@ footer {
     border-radius: 20px;
     padding: 0.5rem 0;
   }
-}
-
-.founder-info {
-  border: solid black 3pt;
-  border-radius: 5px;
 }
 
 .all-btns {

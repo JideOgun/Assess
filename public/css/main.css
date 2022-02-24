@@ -566,8 +566,74 @@ input:checked + label:hover label:hover ~ label,
   }
 }
 
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-wrapper .card {
+  width: 80%;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.about-wrapper a {
+  line-height: 1.5rem;
+}
+
+.top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
 .about-imgs {
   width: 50%;
+  margin: 1rem 0;
+}
+
+.about-text {
+  color: white;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.founder-info {
+  border: solid rgba(58, 39, 72, 0.7) 3pt;
+  border-radius: 5px;
+}
+
+.founders {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.founder-name {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: #f4a740;
 }
 
 body {
@@ -921,11 +987,6 @@ footer img {
   height: 4rem;
   border-radius: 20px;
   padding: 0.5rem 0;
-}
-
-.founder-info {
-  border: solid black 3pt;
-  border-radius: 5px;
 }
 
 .all-btns {
