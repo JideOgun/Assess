@@ -2,6 +2,11 @@ const { Reviews } = require('../models');
 
 const reviewsData = [
     {
+        reviews_text: `They held it down like H-Town`,
+        user_id: 18,
+        company_id: 1
+     },
+    {
        reviews_text: 'Work life balance  is amazing',
        user_id: 1,
        company_id: 8
@@ -280,12 +285,8 @@ const reviewsData = [
         reviews_text: `Work life balance is amazing`,
         user_id: 1,
         company_id: 1
-    },
-    {
-        reviews_text: `They held it down like H-Town`,
-        user_id: 18,
-        company_id: 1
-     }
+    }
+
 
 ];
 
