@@ -746,6 +746,41 @@ const reviewsData = [
         user_id: 4,
         company_id: 11
     },
+    {
+        reviews_text: `Just as organized as their software`,
+        user_id: 19,
+        company_id: 12
+    },
+    {
+        reviews_text: `High turnover rate`,
+        user_id: 20,
+        company_id: 12
+    },
+    {
+        reviews_text: `IBM > Google`,
+        user_id: 2,
+        company_id: 12
+     },
+     {
+        reviews_text: `Medical insurance is great at IBM.`,
+        user_id: 1,
+        company_id: 12
+     },
+     {
+        reviews_text: `I learned a lot while working at IBM. Great team environment.`,
+        user_id: 6,
+        company_id: 12
+     },
+     {
+        reviews_text: `love being here every day!`,
+        user_id: 3,
+        company_id: 12
+     },
+     {
+        reviews_text: `Company events were so fun here!`,
+        user_id: 17,
+        company_id: 12
+     },
 
 
 ];
