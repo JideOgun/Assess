@@ -26,4 +26,4 @@ async function editReviewHandler(event) {
   }
 }
 
-document.querySelector('.edit-btn').addEventListener('submit', editReviewHandler);
+document.querySelector('.edit-btn').addEventListener('click', editReviewHandler);

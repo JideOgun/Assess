@@ -34,11 +34,14 @@ router.get('/', (req, res) => {
 
    router.get('/edit/:id', withAuth, (req, res) => {
       
-      Company.findByPk(req.params.id, {
+      Reviews.findOne({
+            where: {
+                  id: req.params.id
+              },
           include: [
               {
-                model: Reviews,
-                attributes: ['id','reviews_text', 'createdAt'],
+                model: Company,
+                attributes: ['id','company_name'],
                 include: {
                   model: User,
                   attributes: ['username']
@@ -52,11 +55,11 @@ router.get('/', (req, res) => {
             ]
       })
       .then(dbReviewsData => {
-            
+            console.log(req.params.id);
             // console.log(dbReviewsData);
           if (dbReviewsData) {
               const reviews = dbReviewsData.get({ plain: true });
-            //   console.log(reviews);
+              console.log(reviews);
               res.render('edit-review', { reviews, loggedIn: true });
             } else {
               res.status(404).end();
