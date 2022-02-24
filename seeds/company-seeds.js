@@ -100,6 +100,11 @@ const companyData = [
     company_name: 'HP',
     roles: "IT Developer & Support Engineer",
     user_id: 20
+  },
+  {
+    company_name: 'Intel',
+    roles: "Software Application Development Engineer",
+    user_id: 21
   }
 
 ];

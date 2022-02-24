@@ -102,7 +102,6 @@ const RatingsData = [
     company_id: 20,
     rating_value: 3,
   }
-  
 ];
 
 const seedRatings = () => Ratings.bulkCreate(RatingsData);
