@@ -140,7 +140,24 @@ const reviewsData = [
         reviews_text: `Google is a great place to work. They have so many benefits.`,
         user_id: 2,
         company_id: 1
-     }
+     },
+     {
+        reviews_text: `The free food is awesome, I never have to bring my own lunch.`,
+        user_id: 7,
+        company_id: 1
+     }, 
+     {
+        reviews_text: `Free cafeteria food, Monday to Friday, breakfast, lunch and dinner`,
+        user_id: 2,
+        company_id: 2
+    },
+    {
+        reviews_text: `Facebook > Meta`,
+        user_id: 1,
+        company_id: 2
+    },
+    
+
     
 
 
