@@ -781,6 +781,61 @@ const reviewsData = [
         user_id: 17,
         company_id: 12
      },
+     {
+        reviews_text: `Cisco is a great place to work. They have so many benefits.`,
+        user_id: 18,
+        company_id: 13
+     },
+     {
+        reviews_text: `The free food is awesome, I never have to bring my own lunch.`,
+        user_id: 19,
+        company_id: 13
+     }, 
+     {
+        reviews_text: `Free cafeteria food, Monday to Friday, breakfast, lunch and dinner`,
+        user_id: 20,
+        company_id: 13
+    },
+    {
+        reviews_text: `Cisco > Meta`,
+        user_id: 21,
+        company_id: 13
+    },
+    {
+        reviews_text: `Working for Cisco was great! I helped me land my current job.`,
+        user_id: 22,
+        company_id: 13
+    },
+    {
+        reviews_text: `I was a developer at Cisco for two years. I learned almost everything there is to know about Java`,
+        user_id: 23,
+        company_id: 13
+    },
+    {
+        reviews_text: `The work environment is very casual, I enjoyed working for Cisco`,
+        user_id: 24,
+        company_id: 13
+    },
+    {
+        reviews_text: `DO NOT work here. Work for a small start-up.`,
+        user_id: 25,
+        company_id: 13
+    },
+    {
+        reviews_text: `I got more than plenty of PTO at Cisco! Would recommend.`,
+        user_id: 26,
+        company_id: 13
+    },
+    {
+        reviews_text: `I applied at Cisco but never got a call back. I learned a lot from the interview though.`,
+        user_id: 27,
+        company_id: 13
+    },
+    {
+        reviews_text: `Great benefits`,
+        user_id: 28,
+        company_id: 13 
+    },
 
 
 ];
