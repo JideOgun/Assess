@@ -25,8 +25,6 @@ router.get('/', (req, res) => {
             avgStar();
 
 
-
-
             res.json(dbRatingsData);
         
         }

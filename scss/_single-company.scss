@@ -105,7 +105,7 @@ input:checked + label:hover,
 .benefits-wrapper {
   position: absolute;
   text-align: center;
-  left: 2.5rem;
+  left: 1rem;
   border: 1px solid $primary-clr;
   padding: 0.5rem;
 }
@@ -117,6 +117,7 @@ input:checked + label:hover,
 #company-name {
   font-size: fontSize(small);
   color: $text-clr;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid $primary-clr;
 }
 

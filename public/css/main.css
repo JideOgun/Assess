@@ -114,8 +114,9 @@
 .review-header {
   color: white;
   font-size: 3rem;
-  position: relative;
-  width: 25%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+  width: 50%;
   text-align: center;
 }
 
@@ -124,8 +125,94 @@
   font-size: 3rem;
 }
 
-.edit-link {
-  margin-top: 1rem;
+.edit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 57%;
+}
+
+.edit-btn #edit-btn {
+  background-color: rgba(58, 39, 72, 0.7);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.edit-btn #edit-btn:hover {
+  color: #f4a740;
+}
+
+.review-div {
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+}
+
+@media (max-width: 1200px) {
+  .review-div {
+    position: relative;
+  }
+}
+
+.img-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.dashboard-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+}
+
+.dashboard-company img {
+  width: 5rem;
+  margin: 0 1rem;
+}
+
+.dashboard-company p {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .dashboard-company p {
+    line-height: 2rem;
+  }
 }
 
 .container {
@@ -271,7 +358,7 @@ input:checked + label:hover label:hover ~ label,
 .benefits-wrapper {
   position: absolute;
   text-align: center;
-  left: 2.5rem;
+  left: 1rem;
   border: 1px solid rgba(58, 39, 72, 0.7);
   padding: 0.5rem;
 }
@@ -295,6 +382,7 @@ input:checked + label:hover label:hover ~ label,
 #company-name {
   font-size: 1.5rem;
   color: white;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(58, 39, 72, 0.7);
 }
 
@@ -382,6 +470,100 @@ input:checked + label:hover label:hover ~ label,
 .card {
   width: 60%;
   border-radius: 20px;
+}
+
+.edit-wrapper {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+
+.edit-wrapper a {
+  margin: 0 0 0.5rem 0;
+}
+
+.edit-wrapper h2 {
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.posted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.btn-style {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-style .edit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  background-color: rgba(58, 39, 72, 0.7);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.btn-style .edit-btn:hover {
+  color: #f4a740;
+}
+
+@media (max-width: 768px) {
+  .btn-style .edit-btn {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-style {
+    width: 80%;
+  }
 }
 
 body {
@@ -478,6 +660,24 @@ body a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5rem 4rem;
+}
+
+@media (max-width: 768px) {
+  .header .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header img {
@@ -642,5 +842,6 @@ footer .contact {
 footer img {
   height: 4rem;
   border-radius: 20px;
+  padding: 0.5rem 0;
 }
 /*# sourceMappingURL=main.css.map */

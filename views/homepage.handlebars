@@ -2,13 +2,17 @@
  
 
 <div class='main'>
+      
   {{#each companies as |company|}}
 
-        {{> company-info company}}
-      
-  {{companies.reviews.length}}
+    {{> company-info company}}
+
+        
+    {{companies.reviews.length}}
+  
+   
+  
   {{/each}} 
+   
 </div>
-{{!-- <div>
-      {{> company-info this}}
-</div> --}}
+

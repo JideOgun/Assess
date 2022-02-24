@@ -32,33 +32,37 @@ router.get('/', (req, res) => {
         company.get({ plain: true })
       );
       // console.log(companies);
-
+      // Declaring reviews array here so I can push reviews into because res.render will only render an array
       let reviewsArr = [];
+      // Looping through companies array
       for (var r = 0; r < companies.length; r++) {
         const element = companies[r];
         console.log(element.reviews.length);
         reviewsArr.push(element.reviews);
       }
+
+      // declaring sum as 0 so I can add up all the ratings in the object
       let sum = 0;
+      // declaring avgArr so I can render using res.render
       let avgArr = [];
       for (let i = 0; i < companies.length; i++) {
         const element = companies[i];
         let object = element.ratings;
-        //  console.log(element.ratings);
-        // console.log(object);
+        
+        
+        // changing object into array so I can use forEach to add each rating_value
         Object.keys(object).forEach((key) => {
-          // console.log(key);
+          // putting conditional because each user's key resets at zero...so it doesn't just keep adding instead of starting from zero after each user
           if (key == 0) {
             sum = 0;
           }
           sum += object[key].rating_value;
         });
-        console.log(sum);
+        // decalring average var and dividing by number of ratings in db, then rounding off to one decimal place
         let avg = (sum / companies[i].ratings.length).toFixed(1);
         avgArr.push(avg);
       }
-      console.log(avgArr);
-
+// rendering homepage as well as other arrays that i'll need as partials in the handlebars
       res.render('homepage', {
         companies,
         avgArr,
@@ -116,14 +120,24 @@ router.get('/company/:id', (req, res) => {
       }
 
       const companies = dbCompanyData.get({ plain: true });
-      console.log(companies);
+      console.log(companies.ratings);
+
+     
+      let avg;
       let sum = 0;
       for (let i = 0; i < companies.ratings.length; i++) {
         const element = companies.ratings[i];
         sum += element.rating_value;
       }
-      // console.log(sum);
-      let avg = (sum / companies.ratings.length).toFixed(1);
+      
+      // If no rating has been posted put zero else put average rating
+      if(sum === 0) {
+              avg = 'zero';
+            } else {
+           avg = (sum / companies.ratings.length).toFixed(1);
+            }
+
+     
 
       // console.log(avg);
       res.render('single-company', {

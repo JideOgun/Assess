@@ -30,7 +30,7 @@ async function getStarValue(event) {
     });
 
     if(response.ok) {
-        console.log('Success!');
+        window.location.reload();
     } else {
         alert(response.statusText);
     }

@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const withAuth = require('../../utils/auth');
 
 const reviewsRoutes = require('./reviews-routes');
 const companyRoutes = require('./company-routes');

@@ -1,5 +1,5 @@
 @import './resets', './variables', './functions', './mixins', './login',
-  './dashboard', './single-company';
+  './dashboard', './single-company', './edit';
 
 body {
   background-color: $primary-clr;
@@ -61,6 +61,12 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 4rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   img {
     height: 7rem;
@@ -152,5 +158,6 @@ footer {
   img {
     height: 4rem;
     border-radius: 20px;
+    padding: 0.5rem 0;
   }
 }

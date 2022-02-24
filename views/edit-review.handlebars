@@ -1,0 +1,33 @@
+<article>
+  <div class='edit-wrapper'>
+    <a href='/dashboard'> &larr; Back to dashboard</a>
+    <h2>
+      Edit Review
+    </h2>
+    <form class='edit-reviews-form'>
+      <div class='review-row'>
+        <textarea name='review-body' id='textarea'>{{reviews_text}}</textarea>
+      </div>
+      <div class='posted'>
+        Posted by you on
+        {{format_date reviews.createdAt}}
+
+        <a href='/reviews/{{reviews.id}}'>{{reviews.length}}
+          {{reviews.length}}</a>
+      </div>
+    </form>
+    <div class='btn-style'>
+      <button type='submit' class='edit-btn'>Save</button>
+
+      <button type='button' class='delete-review-btn edit-btn'>Delete</button>
+    </div>
+
+  </div>
+
+</article>
+
+<!--Scripts-->
+{{#if loggedIn}}
+  <script src='/javascript/edit-review.js'></script>
+  <script src='/javascript/delete-review.js'></script>
+{{/if}}
