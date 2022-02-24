@@ -606,6 +606,36 @@ const reviewsData = [
         user_id: 20,
         company_id: 7
     },
+    {
+        reviews_text: `Great pay. Lots of bonuses $$$`,
+        user_id: 21,
+        company_id: 8
+    },
+    {
+        reviews_text: `Crappy PTO policy. Other than that, not bad`,
+        user_id: 22,
+        company_id: 8
+    },
+    {
+        reviews_text: `You're nothing but a number here. They lay off the bottom 10% performers quarterly`,
+        user_id: 1,
+        company_id: 8
+    },
+    {
+        reviews_text: `Perfect workplace for creative people`,
+        user_id: 2,
+        company_id: 8
+    },
+    {
+        reviews_text: `Just as organized as their software`,
+        user_id: 3,
+        company_id: 8
+    },
+    {
+        reviews_text: `High turnover rate`,
+        user_id: 4,
+        company_id: 8
+    },
 
 
 ];
