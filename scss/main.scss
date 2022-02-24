@@ -78,9 +78,15 @@ body {
 
     font-size: fontSize(small);
     padding-right: 2rem;
+    @media (max-width: 768px) {
+      flex-direction: row;
+    }
   }
   a {
     padding-top: 1rem;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
   }
   .slogan-wrapper {
     display: flex;
@@ -96,9 +102,21 @@ body {
   .slogan {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: fontSize(medium);
-    left: 2rem;
+    font-size: fontSize(small);
+    color: $text-clr;
+    display: flex;
+    align-items: center;
+    left: 8rem;
     position: relative;
+    @media (max-width: 1200px) {
+      left: 0rem;
+    }
+  }
+}
+
+#logout {
+  @media (max-width: 768px) {
+    padding: 0 1rem;
   }
 }
 

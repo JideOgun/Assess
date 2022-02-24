@@ -703,8 +703,23 @@ body a:hover {
   padding-right: 2rem;
 }
 
+@media (max-width: 768px) {
+  .header .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .header a {
   padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header a {
+    padding: 0;
+  }
 }
 
 .header .slogan-wrapper {
@@ -737,9 +752,28 @@ body a:hover {
 
 .header .slogan {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 2rem;
-  left: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 8rem;
   position: relative;
+}
+
+@media (max-width: 1200px) {
+  .header .slogan {
+    left: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #logout {
+    padding: 0 1rem;
+  }
 }
 
 .main {
