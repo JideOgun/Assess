@@ -1,0 +1,43 @@
+.about-wrapper {
+  @include flexCenter(column);
+  .card {
+    width: 80%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  a {
+    line-height: 1.5rem;
+  }
+}
+
+.top-text {
+  @include flexCenter(column);
+  width: 50%;
+}
+
+.about-imgs {
+  width: 50%;
+  margin: 1rem 0;
+}
+
+.about-text {
+  color: $text-clr;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.founder-info {
+  border: solid $primary-clr 3pt;
+  border-radius: 5px;
+}
+
+.founders {
+  font-size: fontSize(medium);
+  padding: 0.5rem 0;
+}
+
+.founder-name {
+  font-size: fontSize(medium);
+  padding: 0.5rem 0;
+  color: $secondary-text;
+}
