@@ -100,7 +100,23 @@ const reviewsData = [
         reviews_text: `High turnover rate`,
         user_id: 20,
         company_id: 2
-    }
+    },
+    {
+        reviews_text: `Google > Safari`,
+        user_id: 2,
+        company_id: 1
+     },
+     {
+        reviews_text: `Medical insurance is great at Google.`,
+        user_id: 1,
+        company_id: 1
+     },
+     {
+        reviews_text: `I learned a lot while working at Google. Great team environment.`,
+        user_id: 6,
+        company_id: 1
+     }
+
 
 ];
 
