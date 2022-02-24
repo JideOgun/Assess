@@ -127,11 +127,21 @@ const reviewsData = [
         company_id: 1
      },
      {
-        reviews_text: `I use google every day!`,
-        user_id: 18,
+        reviews_text: `Google, a developers best friend!`,
+        user_id: 4,
+        company_id: 1
+     },
+     {
+        reviews_text: `Google in Austin, Texas`,
+        user_id: 5,
+        company_id: 1
+     },
+    {
+        reviews_text: `Google is a great place to work. They have so many benefits.`,
+        user_id: 2,
         company_id: 1
      }
-
+    
 
 
 ];
