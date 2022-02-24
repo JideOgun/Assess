@@ -226,6 +226,31 @@ const reviewsData = [
         user_id: 10,
         company_id: 10
     },
+    {
+        reviews_text: `Flexible schedules`,
+        user_id: 11,
+        company_id: 11
+    },
+    {
+        reviews_text: `Very strict working hours`,
+        user_id: 12,
+        company_id: 12
+    },
+    {
+        reviews_text: `Inclusive work environment`,
+        user_id: 13,
+        company_id: 13
+    },
+    {
+        reviews_text: `Lots of room for career growth`,
+        user_id: 14,
+        company_id: 14
+    },
+    {
+        reviews_text: `Great pay. Lots of bonuses $$$`,
+        user_id: 15,
+        company_id: 15
+    },
     
 
 ];
