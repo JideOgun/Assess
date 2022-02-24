@@ -88,11 +88,7 @@ router.get('/login', (req, res) => {
 
 // About-Us Route
 router.get('/about-us/', (req, res) => {
-  // if (req.session.loggedIn) {
-  //   res.redirect('/aboutus');
-  //   return;
-  // }
-  res.render('about-us');
+  res.render('about-us',  {loggedIn: req.session.loggedIn});
 });
 
 router.get('/company/:id', (req, res) => {

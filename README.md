@@ -21,7 +21,7 @@ The user will be able to rate and review by leaving comments on Companies.
    ### CMS-Style-Blog-Site functionality
 Given a social media style blog site
 WHEN I visit the site for the first time
-Then I am presented with the homepage, which includes exisiting Companies with reviews if any exists,
+Then I am presented with the homepage, which includes exisiting Companies with reviews,
 navigation links for the homepage and the dashbaord; and the option to log in.
 WHEN I click on the homepage option
 Then I am taken to the homepage
@@ -39,7 +39,7 @@ WHEN I log in there will a drop down menu with companies to choose from. (Add ca
 WHEN I select a company I'll be redirected to the Company page with its comments from previous employees.
 WHEN I click on exisiting Company post(name) then I'm presented with the Company name, Benefits, Salaries, roles, and reviews from previous Employees.
 WHEN I am on a company post I'll have the option to leave a review on the company, and also rate the company.
-WHEN I choose to review rhe company and submit the comment, then the comment will be added to the previous list of comments.
+WHEN I choose to review the company and submit the comment, then the comment will be added to the previous list of comments.
 WHEN i choose to leave a review for a company.
 THEN i will have the ability to edit or delete my review.
 WHEN I choose to rate the company, I can choose to rate the company from one star too a two star rating.
@@ -47,25 +47,29 @@ THEN my rating will be added to the average rating of the company.
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 
-
-(Users having custom dashboards based on companies they follow - Needs research) 
  ---
  ## LICENSES
         Licensed under the Apache License.
  ---
  ## INSTALLATION INSTRUCTIONS
  
-        Install Node, express, nodemon.
+ - Install Node, express, sequelize, dotenv.
+ - sign into mySQL and run 'source db/schema.sql'
+ - run 'quit' in mySQL
+ - run command 'npm run seed'
+ - run 'npm start' to run server
+
  ---
- ## USAGE INFORMATION
+ ## CONTRIBUTORS
+ - Jide Ogunbanjo  [jideogun93@gmail.com](mailto:jideogun93@gmail.com)
+ - Craig Jensen    [CMJensen82@gmail.com](mailto:CMJensen82@gmail.com)
+ - Felipe Zintzun  [felipezintzun@gmail.com](mailto:felipezintzun@gmail.com)
+ - Judy Martinez   [judy.mtz1@gmail.com](mailto:judy.mtz1@gmail.com)
+ - Michael Means   [colemeans51@gmail.com](mailto:colemeans51@gmail.com)
+
         
  ---
-## CONTRIBUTION GUIDELINES
-        None available.
----
-## TEST INSTRUCTIONS
-        None available.
----
+
 ## CREDITS
    
 ---
