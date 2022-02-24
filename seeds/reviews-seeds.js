@@ -981,6 +981,61 @@ const reviewsData = [
         user_id: 15,
         company_id: 16
     },
+    {
+        reviews_text: 'STAY AWAY, DO NOT WORK HERE',
+        user_id: 14,
+        company_id: 17
+    },
+    {
+        reviews_text: `If you can't stand micromanaging, don't work here`,
+        user_id: 13,
+        company_id: 17
+    },
+    {
+        reviews_text: 'Management is horrific',
+        user_id: 12,
+        company_id: 17
+    },
+    {
+        reviews_text: `Flexible schedules`,
+        user_id: 11,
+        company_id: 17
+    },
+    {
+        reviews_text: `Very strict working hours`,
+        user_id: 10,
+        company_id: 17
+    },
+    {
+        reviews_text: `Inclusive work environment`,
+        user_id: 9,
+        company_id: 17
+    },
+    {
+        reviews_text: `Crappy PTO policy. Other than that, not bad`,
+        user_id: 8,
+        company_id: 17
+    },
+    {
+        reviews_text: `You're nothing but a number here. They lay off the bottom 10% performers quarterly`,
+        user_id: 7,
+        company_id: 17
+    },
+    {
+        reviews_text: `High turnover rate`,
+        user_id: 6,
+        company_id: 17
+    },
+    {
+        reviews_text: `DO NOT work here. Work for a small start-up.`,
+        user_id: 5,
+        company_id: 17
+    },
+    {
+        reviews_text: `Great benefits`,
+        user_id: 4,
+        company_id: 17 
+    }
 
 
 ];
