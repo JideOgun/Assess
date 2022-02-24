@@ -59,11 +59,11 @@ const CompanyBenefitsData = [
   },
   {
     company_id: 2,
-    benefits_id: 15,
+    benefits_id: 15.
   },
   {
     company_id: 2,
-    benefits_id: 16,
+    benefits_id: 16.
   },
   {
     company_id: 2,
@@ -84,10 +84,6 @@ const CompanyBenefitsData = [
   {
     company_id: 2,
     benefits_id: 21,
-  },
-  {
-    company_id: 2,
-    benefits_id: 1,
   },
   {
     company_id: 2,
