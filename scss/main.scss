@@ -1,5 +1,5 @@
 @import './resets', './variables', './functions', './mixins', './login',
-  './dashboard', './single-company', './edit';
+  './dashboard', './single-company', './edit', './about-us';
 
 body {
   background-color: $primary-clr;
@@ -57,6 +57,10 @@ body {
 
 .header {
   background-color: $dark-primary;
+  .logo {
+    display: flex;
+    align-items: center;
+  }
   #{&}__container {
     display: flex;
     justify-content: space-between;
@@ -70,28 +74,29 @@ body {
     }
   }
   img {
-    height: 7rem;
+    height: 5.5rem;
     border-radius: 20px;
   }
   .nav {
-    @include flexCenter(column);
+    @include flexCenter(row);
 
     font-size: fontSize(small);
-    padding-right: 2rem;
+    padding: 0 2rem;
     @media (max-width: 768px) {
-      flex-direction: row;
+      flex-direction: column;
+      line-height: 2rem;
     }
   }
   a {
-    padding-top: 1rem;
     @media (max-width: 768px) {
-      padding: 0;
+      padding: 0 0.5rem;
     }
   }
+
   .slogan-wrapper {
     display: flex;
 
-    flex-direction: row;
+    flex-direction: column;
     @media (max-width: 1200px) {
       display: flex;
       justify-content: center;
@@ -106,7 +111,7 @@ body {
     color: $text-clr;
     display: flex;
     align-items: center;
-    left: 8rem;
+
     position: relative;
     @media (max-width: 1200px) {
       left: 0rem;
@@ -116,7 +121,7 @@ body {
 
 #logout {
   @media (max-width: 768px) {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -202,4 +207,18 @@ footer {
 .founder-info {
   border: solid black 3pt;
   border-radius: 5px;
+}
+
+.all-btns {
+  margin: 0.5rem 0.5rem;
+  background-color: $primary-clr;
+  border: none;
+  color: $text-clr;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  &:hover {
+    color: $secondary-text;
+  }
 }
