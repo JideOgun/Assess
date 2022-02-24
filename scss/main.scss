@@ -61,6 +61,12 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 4rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   img {
     height: 7rem;
