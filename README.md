@@ -47,25 +47,29 @@ THEN my rating will be added to the average rating of the company.
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 
-
-(Users having custom dashboards based on companies they follow - Needs research) 
  ---
  ## LICENSES
         Licensed under the Apache License.
  ---
  ## INSTALLATION INSTRUCTIONS
  
-        Install Node, express, nodemon.
+ - Install Node, express, sequelize, dotenv.
+ - sign into mySQL and run 'source db/schema.sql'
+ - run 'quit' in mySQL
+ - run command 'npm run seed'
+ - run 'npm start' to run server
+
  ---
- ## USAGE INFORMATION
+ ## CONTRIBUTORS
+ - Jide Ogunbanjo  [jideogun93@gmail.com](mailto:jideogun93@gmail.com)
+ - Craig Jensen    [CMJensen82@gmail.com](mailto:CMJensen82@gmail.com)
+ - Felipe Zintzun  [felipezintzun@gmail.com](mailto:felipezintzun@gmail.com)
+ - Judy Martinez   [judy.mtz1@gmail.com](mailto:judy.mtz1@gmail.com)
+ - Michael Means   [colemeans51@gmail.com](mailto:colemeans51@gmail.com)
+
         
  ---
-## CONTRIBUTION GUIDELINES
-        None available.
----
-## TEST INSTRUCTIONS
-        None available.
----
+
 ## CREDITS
    
 ---
