@@ -636,6 +636,46 @@ const reviewsData = [
         user_id: 4,
         company_id: 8
     },
+    {
+        reviews_text: `They held it down like H-Town`,
+        user_id: 5,
+        company_id: 9
+     },
+    {
+       reviews_text: 'Work life balance  is amazing',
+       user_id: 6,
+       company_id: 9
+    },
+    {
+        reviews_text: 'Free cafeteria food, Monday to Friday, breakfast, lunch and dinner',
+        user_id: 7,
+        company_id: 9
+    },
+    {
+        reviews_text: 'Great benefits',
+        user_id: 8,
+        company_id: 9
+    },
+    {
+        reviews_text: 'Management is horrific',
+        user_id: 9,
+        company_id: 9
+    },
+    {
+        reviews_text: 'Great office space',
+        user_id: 10,
+        company_id: 9
+    },
+    {
+        reviews_text: 'Layed back office envioronment',
+        user_id: 11,
+        company_id: 9 
+    },
+    {
+        reviews_text: 'STAY AWAY, DO NOT WORK HERE',
+        user_id: 12,
+        company_id: 9
+    },
 
 
 ];
