@@ -345,6 +345,42 @@ const CompanyBenefitsData = [
     company_id: 9,
     benefits_id: 1,
   },
+  {
+    company_id: 10,
+    benefits_id: 2,
+  },
+  {
+    company_id: 10,
+    benefits_id: 3,
+  },
+  {
+    company_id: 10,
+    benefits_id: 4,
+  },
+  {
+    company_id: 10,
+    benefits_id: 5,
+  },
+  {
+    company_id: 10,
+    benefits_id: 6,
+  },
+  {
+    company_id: 10,
+    benefits_id: 7,
+  },
+  {
+    company_id: 10,
+    benefits_id: 8,
+  },
+  {
+    company_id: 10,
+    benefits_id: 9,
+  },
+  {
+    company_id: 10,
+    benefits_id: 10,
+  },
 
 ];
 
