@@ -808,33 +808,78 @@ const reviewsData = [
     },
     {
         reviews_text: `I was a developer at Cisco for two years. I learned almost everything there is to know about Java`,
-        user_id: 23,
+        user_id: 21,
         company_id: 13
     },
     {
         reviews_text: `The work environment is very casual, I enjoyed working for Cisco`,
-        user_id: 24,
+        user_id: 20,
         company_id: 13
     },
     {
         reviews_text: `DO NOT work here. Work for a small start-up.`,
-        user_id: 25,
+        user_id: 19,
         company_id: 13
     },
     {
         reviews_text: `I got more than plenty of PTO at Cisco! Would recommend.`,
-        user_id: 26,
+        user_id: 18,
         company_id: 13
     },
     {
         reviews_text: `I applied at Cisco but never got a call back. I learned a lot from the interview though.`,
-        user_id: 27,
+        user_id: 17,
         company_id: 13
     },
     {
         reviews_text: `Great benefits`,
-        user_id: 28,
+        user_id: 16,
         company_id: 13 
+    },
+    {
+        reviews_text: `Management is horrific`,
+        user_id: 15,
+        company_id: 14 
+    },
+    {
+        reviews_text: `Great office space`,
+        user_id: 14,
+        company_id: 14
+    },
+    {
+        reviews_text: `Layed back office envioronment`,
+        user_id: 13,
+        company_id: 14 
+    },
+    {
+        reviews_text: `STAY AWAY, DO NOT WORK HERE`,
+        user_id: 12,
+        company_id: 14
+    },
+    {
+        reviews_text: `If you can't stand micromanaging, don't work here`,
+        user_id: 11,
+        company_id: 14
+    },
+    {
+        reviews_text: `Work from home options`,
+        user_id: 10,
+        company_id: 14
+    },
+    {
+        reviews_text: `Lots of corporate discounts yay!`,
+        user_id: 9,
+        company_id: 14
+    },
+    {
+        reviews_text: `Flexible schedules`,
+        user_id: 8,
+        company_id: 14
+    },
+    {
+        reviews_text: `Very strict working hours`,
+        user_id: 7,
+        company_id: 14
     },
 
 
