@@ -146,7 +146,7 @@ const CompanyBenefitsData = [
     benefits_id: 15,
   },
   {
-    company_id: 4,
+    company_id: 8,
     benefits_id: 16,
   },
   {
@@ -526,7 +526,7 @@ const CompanyBenefitsData = [
     benefits_id: 17,
   },
   {
-    company_id: 16,
+    company_id: 19,
     benefits_id: 4,
   },
   {
@@ -555,10 +555,8 @@ const CompanyBenefitsData = [
   },
   {
     company_id: 16,
-    benefits_id: 4,
-  },
-
-
+    benefits_id: 9,
+  }
 ];
 
 const seedCompanyBenefits = () =>
