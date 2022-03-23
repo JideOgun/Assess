@@ -79,6 +79,8 @@ THEN I am signed out of the site.  <br>
 
 ## DEPLOYED LINK
 - [TEKSESS](https://teksess.herokuapp.com/)
+
+![TekSess Image](public\images\teksessimage.jpg)
    
 ---
 ## Questions
