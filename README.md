@@ -12,6 +12,7 @@
 6. [TEST INSTRUCTIONS](#test-instructions)
 7. [CREDITS](#credits)
 8. [QUESTIONS](#questions)
+9. [DEPLOYED APPLICATION LINK](#deployed-link)
 ---
  ## DESCRIPTION
 A social website where users can find valuable insights from previous employees about a company's culture, benefits, salaries and more. <br>
@@ -76,8 +77,8 @@ THEN I am signed out of the site.  <br>
 
 ---
 
-## Walkthrough Video
-   none
+## DEPLOYED LINK
+- [TEKSESS](https://teksess.herokuapp.com/)
    
 ---
 ## Questions
