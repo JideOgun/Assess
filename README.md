@@ -1,5 +1,5 @@
 # GRYFINDOR-GROUP 2 - TekSess
-
+![alt Teksess] (https://res.cloudinary.com/dkmsnpghg/image/upload/v1650635265/rskfmdndskus8yqqqxgu.jpg)
 # Title
 ### TekSess
 ## Table of Contents
