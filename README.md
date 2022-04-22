@@ -1,5 +1,5 @@
 # GRYFINDOR-GROUP 2 - TekSess
-![alt Teksess] (https://res.cloudinary.com/dkmsnpghg/image/upload/v1650635265/rskfmdndskus8yqqqxgu.jpg)
+![alt Teksess](https://res.cloudinary.com/dkmsnpghg/image/upload/v1650635265/rskfmdndskus8yqqqxgu.jpg)
 ## DEPLOYED LINK
 - [TEKSESS](https://teksess.herokuapp.com/)
 # Title
